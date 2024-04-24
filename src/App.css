@@ -1,3 +1,81 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+  --pink: #FF54C0;
+  --green: #3EED6F;
+  --blue: #54ACFF;
+}
+
 body, html {
-  background-color: #000;
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  cursor: none;
+}
+
+h1, h2, h3 {font-weight: normal; margin: 0;}
+ul { margin: 0; padding: 0; list-style-type: none; }
+a { color: var(--light); text-decoration: none; cursor: none; }
+a:hover { color: var(--pink)}
+
+.BLACKOUT { font-family: 'BLACKOUT', sans-serif; }
+.smallText { font-size: 16px; }
+.green { color: var(--green); }
+.blue { color: var(--blue); }
+.pink { color: var(--pink); }
+
+@font-face {
+  font-family: 'BLACKOUT';
+  src: url('../public/BLACKOUT.TTF') format('truetype');
+}
+
+main { padding: 0 6vw; }
+h1 { font-size: 120px; }
+h2 { font-size: 60px; }
+
+#titleScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#education {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+footer {
+  border-top: 1px solid var(--light);
+  /*border-bottom: 1px solid #fff;*/
+  padding: 20px 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkList { display: flex; }
+li { margin-left: 2vw;}
+svg { margin-right: 8px;}
+
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  opacity: 0.3;
+  pointer-events: none; /* Ensure the cursor doesn't interfere with mouse events */
+  z-index: 9999; /* Ensure the cursor stays on top of other elements */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+.custom-cursor:hover {
+  background-color: var(--pink);
 }

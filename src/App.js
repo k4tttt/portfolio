@@ -1,23 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from './components/Home';
+import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
+
+/*
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <CustomCursor />
+      <HelmetProvider>
+        <Helmet>
+            <title>Tyra Wodén | Portfolio</title>
+            <meta charSet="UTF-8" />
+            <meta name="author" content="Tyra Wodén" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Helmet>
+      </HelmetProvider>
+
+      <Router>
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

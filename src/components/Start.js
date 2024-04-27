@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Start() {
+const Start = () => {
     const [text, setText] = useState('awesome');
+    const [color, setColor] = useState('blue');
     const adjectives = ["awesome", "user-friendly", "interactive", "fun", "intuitive"];
+    const colors = ["green", "pink", "blue"];
     let i = 0;
+    let j = 0;
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setText(generateNewText());
+            const { newText, newColor } = generateNewTextAndColor();
+            setText(newText);
+            setColor(newColor);
         }, 1500);
 
         return () => clearInterval(intervalId);
     }, []);
 
-    const generateNewText = () => {
-        if (i < adjectives.length - 1) {
-            i++;
-        } else {
-            i = 0;
-        }
-        return adjectives[i];
+    const generateNewTextAndColor = () => {
+        i = (i + 1) % adjectives.length;
+        j = (j + 1) % colors.length;
+        const newText = adjectives[i];
+        const newColor = colors[j];
+        return { newText, newColor };
     };
 
     return (
         <div id='titleScreen'>
             <p>Hello, I am</p>
             <h1 className='BLACKOUT'>tyra woden</h1>
-            <p>I have a passion for creating <span className='blue'>{text}</span> digital experiences.</p>
+            <p>I have a passion for creating <span className={color}>{text}</span> digital experiences.</p>
         </div>
     );
 }
+
+export default Start;

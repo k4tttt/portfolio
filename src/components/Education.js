@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function Education() {
+ const Education = () => {
     return (
         <div id='education'>
             <h2 className='BLACKOUT'>education</h2>
@@ -17,3 +17,5 @@ export default function Education() {
         </div>
     );
 }
+
+export default Education;

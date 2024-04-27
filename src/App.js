@@ -18,7 +18,7 @@ import CustomCursor from './components/CustomCursor';
 </head>
 */
 
-function App() {
+const App = () => {
   return (
     <div className="container">
       <CustomCursor />

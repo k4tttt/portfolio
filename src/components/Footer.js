@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export default function Footer() {
+ const Footer = () => {
     return(
         <footer>
             <div>
@@ -20,3 +20,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+export default Footer;

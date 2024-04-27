@@ -3,7 +3,7 @@ import Start from './Start';
 import Education from './Education';
 import Projects from './Projects';
 
-function Home() {
+const Home = () => {
 
     return (
         <main>

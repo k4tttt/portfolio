@@ -4,7 +4,7 @@
   --pink: #FF54C0;
   --green: #3EED6F;
   --blue: #54ACFF;
-  --gray: #151515;
+  --gray: #171717;
 }
 
 body, html {
@@ -55,7 +55,7 @@ h2 { font-size: 60px; }
 
 #projectContainer {
   /*height: 100vh;*/
-  grid-gap: 10px;
+  grid-gap: 12px;
   grid-template-areas:
     "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-3 area-4" 
     "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-3 area-4" 
@@ -89,8 +89,25 @@ h2 { font-size: 60px; }
   /*border: 2px solid #393939;*/
   border-radius: 0.3rem;
   position: relative;
+  transition: 0.2s;
 }
 
+.projectItem:hover { transform: scale(1.02); }
+
+.projectItem div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.projectItem img {
+  border-radius: 0.3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust to cover the entire space while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+}
 /*.projectItem:hover { border: 2px solid var(--pink); }
 .emptyProjectItem:hover { border: none; }*/
 
@@ -107,22 +124,28 @@ h2 { font-size: 60px; }
 .projectTitle {font-size: 24px;}
 .emptyProjectItem {border: none;}
 
+.links i {transition: 0.2s;}
+.links i:hover {transform: scale(1.15);}
+
 #origo {
   grid-area: area-1;
-  background: url("../public/images/origo_preview.png") no-repeat center;
-  background-size: cover;
+  background-color: #3EED6F;
 }
 
 #idaginatt {
   grid-area: area-2;
+  background-color: coral;
+  /*
   background: url("../public/images/idaginatt-preview.png") no-repeat center;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #discogs {
   grid-area: area-3;
+  background-color: darkorchid;
+  /*
   background: url("../public/images/discogs_preview.png") no-repeat center;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #empty-1 { grid-area: area-4; background-color: var(--gray); }
@@ -131,8 +154,10 @@ h2 { font-size: 60px; }
 
 #eli {
   grid-area: area-7;
+  background-color: darkturquoise;
+  /*
   background: url("../public/images/eli_preview.png") no-repeat center;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #empty-4 { grid-area: area-8; background-color: var(--gray); }
@@ -141,8 +166,10 @@ h2 { font-size: 60px; }
 
 #tuneblr {
   grid-area: area-11;
+  background-color: rgb(255, 22, 208);
+  /*
   background: url("../public/images/tuneblr_preview.png") no-repeat center;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #empty-7 { grid-area: area-12; background-color: var(--gray); }

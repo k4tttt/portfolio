@@ -5,7 +5,7 @@ const CustomCursor = () => {
 
     useEffect(() => {
         const updateCursorPosition = (e) => {
-        setPosition({ x: e.clientX, y: e.clientY });
+            setPosition({ x: e.clientX, y: e.clientY });
         };
 
         document.addEventListener('mousemove', updateCursorPosition);
@@ -16,7 +16,7 @@ const CustomCursor = () => {
     }, []);
 
     return (
-        <div className="custom-cursor" style={{ left: `${position.x}px`, top: `${position.y}px` }} />
+        <div className='custom-cursor' style={{ left: `${position.x}px`, top: `${position.y}px` }} />
     );
 };
 

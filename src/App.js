@@ -1,4 +1,5 @@
 import './App.css';
+import React, {} from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -24,16 +25,16 @@ const App = () => {
       <CustomCursor />
       <HelmetProvider>
         <Helmet>
-            <title>Tyra Wodén | Portfolio</title>
-            <meta charSet="UTF-8" />
-            <meta name="author" content="Tyra Wodén" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Tyra Wodén | Portfolio</title>
+          <meta charSet="UTF-8" />
+          <meta name="author" content="Tyra Wodén" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
       </HelmetProvider>
 
       <Router>
         <Routes>
-            <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
         <Footer />
       </Router>

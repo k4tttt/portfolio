@@ -26,13 +26,13 @@ const Projects = () => {
                     </div>
                 </Link>
                 <Link to='' id='empty-1' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='' id='empty-2' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText blue'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='' id='empty-3' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='eli' id='eli' className='projectItem overlay'>
                     <div>
@@ -41,13 +41,13 @@ const Projects = () => {
                     </div>
                 </Link>
                 <Link to='' id='empty-4' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='' id='empty-5' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='' id='empty-6' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText blue'>Stay tuned...</span><br /></p></div>
                 </Link>
                 <Link to='tuneblr' id='tuneblr' className='projectItem overlay'>
                     <div>
@@ -56,7 +56,7 @@ const Projects = () => {
                     </div>
                 </Link>
                 <Link to='' id='empty-7' className='projectItem emptyProjectItem'>
-                    <div></div>
+                    <div><p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p></div>
                 </Link>
             </div>
         </div>
@@ -64,23 +64,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
-/*<div id='idaginatt' className='projectItem overlay'>
-                    <p className='bold projectTitle'><span className='smallText'>2022-2023</span><br />IDag&Inatt</p>
-                </div>
-                <div id='discogs' className='projectItem overlay'>
-                    <p className='bold projectTitle'><span className='smallText'>2023</span><br />Redesigning Discogs</p>
-                </div>
-                <div id='empty-1' className='projectItem emptyProjectItem'></div>
-                <div id='empty-2' className='projectItem emptyProjectItem'></div>
-                <div id='empty-3' className='projectItem emptyProjectItem'></div>
-                <div id='eli' className='projectItem overlay'>
-                    <p className='bold projectTitle'><span className='smallText'>2023</span><br />ELI</p>
-                </div>
-                <div id='empty-4' className='projectItem emptyProjectItem'></div>
-                <div id='empty-5' className='projectItem emptyProjectItem'></div>
-                <div id='empty-6' className='projectItem emptyProjectItem'></div>
-                <div id='tuneblr' className='projectItem overlay'>
-                    <p className='bold projectTitle'><span className='smallText'>2023</span><br />tuneblr</p>
-                </div>
-                <div id='empty-7' className='projectItem emptyProjectItem'></div> */

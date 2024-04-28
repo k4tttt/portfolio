@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled files
+build/
+dist/
+.next/
+.gatsby/
+
+# Environment variables
+.env*
+
+# IDE files
+.idea/
+.vscode/

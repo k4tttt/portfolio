@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import Origo from './components/Origo';
 
 /*
 <head>
@@ -35,6 +36,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/origo" element={<Origo />} />
         </Routes>
         <Footer />
       </Router>

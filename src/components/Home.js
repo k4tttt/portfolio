@@ -4,7 +4,6 @@ import Education from './Education';
 import Projects from './Projects';
 
 const Home = () => {
-
     return (
         <main>
             <Start />

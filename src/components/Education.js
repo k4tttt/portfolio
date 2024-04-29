@@ -12,6 +12,9 @@ import { Link } from "react-router-dom";
                 <p>
                     The program makes me an expert in developing user-friendly, effective, and durable user interfaces. This includes giving me great skills in web development, graphic design, end-user testing, and software development.
                 </p>
+                <p>
+                    more text probably. i should add more
+                </p>
             </div>
             
         </div>

@@ -54,8 +54,8 @@ const Origo = () => {
                         <p className=''>
                             I am currently working as a team member in the PR group at Kårhuset Origo.
                             Two peers and I started this group in October 2023, in order to improve
-                            Origo's presence on social media. Since then, Origo has gone from inconsistency
-                            and a lack of graphic personality, to <span className='green'>regularity</span> and a <span className='pink'>uniform graphic appearence</span>.
+                            Origo's presence on social media. Since then, Origo's socials have gone from inconsistent
+                            and lacking of graphic personality, to <span className='green'>regular</span> and with a <span className='pink'>uniform graphic appearence</span>.
                         </p>
                         <br />
                         <h3 className='BLACKOUT'>results</h3>
@@ -77,7 +77,7 @@ const Origo = () => {
                     </div>
                 </div>
                 <div className='posters'>
-                    <p className='bold'>Posters</p>
+                    <p className='bold'>Posters for events</p>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <img src='/images/discOrigo_poster.png' alt='Origo poster - DiscOrigo 2023' />
                         <img src='/images/clubxvt24_poster.png' alt='Origo poster - Club X VT24' />

@@ -7,6 +7,10 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import Origo from './components/Origo';
+import Tuneblr from './components/Tuneblr';
+import IdagInatt from './components/IdagInatt';
+import Eli from './components/Eli';
+import Discogs from './components/Discogs';
 
 /*
 <head>
@@ -37,6 +41,10 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/origo" element={<Origo />} />
+          <Route path="/tuneblr" element={<Tuneblr />} />
+          <Route path="/idaginatt" element={<IdagInatt />} />
+          <Route path="/eli" element={<Eli />} />
+          <Route path="/discogs" element={<Discogs />} />
         </Routes>
         <Footer />
       </Router>

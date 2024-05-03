@@ -97,7 +97,7 @@ h3 { font-size: 34px; }
   }
 }
 
-#projects { padding-top: 6vh; }
+#projects { margin-top: 6vh; margin-bottom: 32vh; }
 
 #projectContainer {
   /*height: 100vh;*/
@@ -242,7 +242,7 @@ thead tr {border: 1px solid var(--light);}
   width: 17vw;
 }
 
-#education {margin: 32vh 0;}
+#education {margin-bottom: 32vh;}
 
 .educationContent {
   flex-grow: 1;

@@ -18,7 +18,8 @@ const Education = () => {
                             I am currently studying my third year at the <Link onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="green" to="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/" target="_blank" rel="noopener noreferrer">Master of Science Program in Interaction Technology and Design</Link> at Umeå University.
                         </p>
                         <p>
-                            The program makes me an expert in developing user-friendly, effective, and durable user interfaces. This includes giving me great skills in web development, graphic design, end-user testing, and software development.
+                            The program makes me an expert in developing user-friendly, effective, and durable user interfaces. 
+                            This includes giving me great skills in web and software development, graphic design, and end-user testing.
                         </p>
                         <p>
                             more text probably. i should add more

@@ -15,7 +15,7 @@ const Origo = () => {
                 <div>
                     <Link to='/' className='smallerText' style={{ marginRight: '8px' }}>Tyra Wodén</Link>
                     <FontAwesomeIcon icon={faAngleRight} className='smallerText'></FontAwesomeIcon>
-                    <Link to='/origo' className='smallerText'>Marketing at Kårhuset Origo</Link>
+                    <Link to={{}} className='smallerText'>Marketing at Kårhuset Origo</Link>
                 </div>
                 <div className='projectSummaryContent'>
                     <div>

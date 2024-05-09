@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://people.cs.umu.se/id21twn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

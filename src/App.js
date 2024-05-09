@@ -11,18 +11,7 @@ import Tuneblr from './components/Tuneblr';
 import IdagInatt from './components/IdagInatt';
 import Eli from './components/Eli';
 import Discogs from './components/Discogs';
-
-/*
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-</head>
-*/
+import Forgetmenot from './components/Forgetmenot';
 
 const App = () => {
   return (
@@ -37,7 +26,7 @@ const App = () => {
         </Helmet>
       </HelmetProvider>
 
-      <Router>
+      <Router basename='/id21twn'>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/origo" element={<Origo />} />
@@ -45,6 +34,7 @@ const App = () => {
           <Route path="/idaginatt" element={<IdagInatt />} />
           <Route path="/eli" element={<Eli />} />
           <Route path="/discogs" element={<Discogs />} />
+          <Route path="/forgetmenot" element={<Forgetmenot />} />
         </Routes>
         <Footer />
       </Router>

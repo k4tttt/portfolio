@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { faClipboard, faClock } from '@fortawesome/free-regular-svg-icons';
@@ -11,6 +12,12 @@ const Tuneblr = () => {
 
     return (
         <main>
+            <HelmetProvider>
+                <Helmet>
+                    <title>Tyra Wodén | tuneblr</title>
+                </Helmet>
+            </HelmetProvider>
+
             <div className='projectSummary'>
                 <div>
                     <Link to='/' className='smallerText' style={{ marginRight: '8px' }}>Tyra Wodén</Link>
@@ -39,32 +46,55 @@ const Tuneblr = () => {
                         </table>
                     </div>
                     <div>
-                        <img src='/images/mixtape.png' alt='tuneblr mixtape' />
+                        <img src={process.env.PUBLIC_URL + '/images/mixtape.png'} alt='tuneblr mixtape' />
                     </div>
                 </div>
             </div>
 
             <div className='projectContent'>
-                <div className='projectSummaryContent'>
+                <div className='projectDescription'>
                     <div>
-                        <img src='/images/tuneblr_sample.png' alt='tuneblr samples' />
+                        <img src={process.env.PUBLIC_URL + '/images/tuneblr_startpage.png'} alt='tuneblr start page' />
+                        <p className='bold smallText'>Start page</p>
                     </div>
                     <div>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
-                            The tuneblr website was created as part of the <Link className='green' to='https://www.umu.se/utbildning/kurser/databasteknik-och-webbaserade-system/' target="_blank" rel="noopener noreferrer">Databases and Web Based Systems</Link> course. The
+                            The tuneblr website was created as part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/databasteknik-och-webbaserade-system/' target="_blank" rel="noopener noreferrer">Databases and Web Based Systems</Link> course. The
                             task was to develop a web application connected to an underlying database, using the ASP.NET
                             Core MVC framework and SQL database.
                         </p>
                         <br />
                         <h3 className='BLACKOUT'>results</h3>
                         <p className=''>
-                            The result of the project is in form of a web app where users can <span className='blue'>register</span> an account, and 
-                            then <span className='pink'>create</span> mixtapes that can be shared with other users. Mixtapes are shared via email 
-                            through an SMTP server. Users can also <span className='green'>browse</span> among all mixtapes that exist in the database, 
-                            and sort them by different tags such as “pop”, “electronic” or “swedish”. Login is handled via 
+                            The result of the project is in form of a web app where users can <span className='green'>register</span> an account, and
+                            then <span className='green'>create</span> mixtapes that can be shared with other users. Mixtapes are shared via email
+                            through an SMTP server. Users can also <span className='green'>browse</span> among all mixtapes that exist in the database,
+                            and sort them by different tags such as “pop”, “electronic” or “swedish”. Login is handled via
                             cookies, and passwords are encrypted before stored in the database.
                         </p>
+                    </div>
+                </div>
+                <div>
+                    <div className='desktops' style={{marginTop: '26vh'}}>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/tuneblr_customize_profile.png'} alt='tuneblr customize profile' />
+                            <p className='bold smallText'>Customize your profile</p>
+                        </div>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/tuneblr_profile.png'} alt='tuneblr profile' />
+                            <p className='bold smallText'>View user profiles</p>
+                        </div>
+                    </div>
+                    <div className='desktops'>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/tuneblr_create_mixtape.png'} alt='tuneblr create mixtape' />
+                            <p className='bold smallText'>Create mixtapes</p>
+                        </div>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/tuneblr_browse_mixtapes.png'} alt='tuneblr browse mixtapes' />
+                            <p className='bold smallText'>Browse mixtapes</p>
+                        </div>
                     </div>
                 </div>
             </div>

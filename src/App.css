@@ -97,7 +97,7 @@ h3 { font-size: 34px; }
   }
 }
 
-#projects { margin-top: 6vh; margin-bottom: 32vh; }
+#projects { padding-top: 6vh; margin-bottom: 32vh; }
 
 #projectContainer {
   /*height: 100vh;*/
@@ -157,6 +157,17 @@ h3 { font-size: 34px; }
   object-position: center;
 }
 
+.bubbles {
+  position: absolute;
+  border-radius: 0.3rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .projectItem p {
   opacity: 0;
   position: absolute;
@@ -172,7 +183,7 @@ h3 { font-size: 34px; }
 .projectItem:hover p {opacity: 1;}
 .projectTitle {font-size: 24px;}
 .emptyProjectItem {border: none; background-color: var(--gray);}
-.emptyProjectItem:hover {background-color: #323232;}
+.emptyProjectItem:hover {background-color: #1d1d1d;}
 
 .projectTags {
   display: flex;

@@ -60,17 +60,27 @@ const Discogs = () => {
                     <div>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
-                            Redesigning elements of the Discogs website was preformed a part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/webbteknik-for-ingenjorer/' target="_blank" rel="noopener noreferrer">Web Technology for Engineers</Link> course. The 
-                            task was split into four parts: paper prototyping, developing using HTML and CSS, adding JavaScript to the website, and lastly, using the React framework 
+                            Redesigning elements of the Discogs website was preformed a part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/webbteknik-for-ingenjorer/' target="_blank" rel="noopener noreferrer">Web Technology for Engineers</Link> course. The
+                            task was split into four parts: paper prototyping, developing using HTML and CSS, adding JavaScript to the website, and lastly, using the React framework
                             to recreate the already developed website.
                         </p>
                         <br />
                         <h3 className='BLACKOUT'>results</h3>
                         <p className=''>
-                            The result consisted of a website that contained three main pages. The first page displayed information about 
+                            The result consisted of a <span className='green'>responsive website</span> that contained three main pages. The first page displayed information about
                             an artist and their discography. The second page displayed all albums for an artist. The third page displayed details 
-                            about a specific album, such as tracklist, credits, and versions.
+                            such as tracklist, credits, and versions of a specific album.
                         </p>
+                    </div>
+                </div>
+                <div className='desktops' style={{ marginTop: '16vh' }}>
+                    <div>
+                        <img src={process.env.PUBLIC_URL + '/images/discogs_albums.png'} alt='Discogs albums page' />
+                        <p className='bold smallText'>See all albums for the artist</p>
+                    </div>
+                    <div>
+                        <img src={process.env.PUBLIC_URL + '/images/discogs_album_detail.png'} alt='Discogs album detail page' />
+                        <p className='bold smallText'>View details about an album</p>
                     </div>
                 </div>
             </div>

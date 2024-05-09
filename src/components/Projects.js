@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+    const [isHovered, setIsHovered] = useState('');
+
     return (
         <div id='projects'>
             <h2 className='BLACKOUT'>projects</h2>
@@ -43,11 +45,17 @@ const Projects = () => {
                         <img src={process.env.PUBLIC_URL + '/images/discogs_preview.png'} alt='Discogs' />
                     </div>
                 </Link>
-                <Link to='' id='empty-1' className='projectItem emptyProjectItem'>
-                    <div><p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p></div>
+                <Link to='' id='empty-1' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-1')} onMouseLeave={() => setIsHovered('')}>
+                    <div>
+                        <img className={`bubbles ${isHovered === 'empty-1' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
+                        <p className='bold projectTitle'><span className='smallerText blue'>Stay tuned...</span><br /></p>
+                    </div>
                 </Link>
-                <Link to='' id='empty-2' className='projectItem emptyProjectItem'>
-                    <div><p className='bold projectTitle'><span className='smallerText blue'>Stay tuned...</span><br /></p></div>
+                <Link to='' id='empty-2' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-2')} onMouseLeave={() => setIsHovered('')} >
+                    <div>
+                        <img className={`bubbles ${isHovered === 'empty-2' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
+                        <p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p>
+                    </div>
                 </Link>
                 <Link to='forgetmenot' id='forgetmenot' className='projectItem overlay'>
                     <div>
@@ -71,8 +79,11 @@ const Projects = () => {
                         <img src={process.env.PUBLIC_URL + '/images/eli_preview.png'} alt='ELI' />
                     </div>
                 </Link>
-                <Link to='' id='empty-4' className='projectItem emptyProjectItem'>
-                    <div><p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p></div>
+                <Link to='' id='empty-4' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-4')} onMouseLeave={() => setIsHovered('')}>
+                    <div>
+                        <img className={`bubbles ${isHovered === 'empty-4' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
+                        <p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p>
+                    </div>
                 </Link>
                 <Link to='handwritten_digits' id='handwritten_digits' className='projectItem overlay'>
                     <div>
@@ -85,8 +96,11 @@ const Projects = () => {
                         <img src={process.env.PUBLIC_URL + '/images/handwritten_digit.png'} alt='Handwritten digit' />
                     </div>
                 </Link>
-                <Link to='' id='empty-6' className='projectItem emptyProjectItem'>
-                    <div><p className='bold projectTitle'><span className='smallerText blue'>Stay tuned...</span><br /></p></div>
+                <Link to='' id='empty-6' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-6')} onMouseLeave={() => setIsHovered('')}>
+                    <div>
+                        <img className={`bubbles ${isHovered === 'empty-6' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
+                        <p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p>
+                    </div>
                 </Link>
                 <Link to='tuneblr' id='tuneblr' className='projectItem overlay'>
                     <div>
@@ -101,8 +115,11 @@ const Projects = () => {
                         <img src={process.env.PUBLIC_URL + '/images/tuneblr_preview.png'} alt='tuneblr' />
                     </div>
                 </Link>
-                <Link to='' id='empty-7' className='projectItem emptyProjectItem'>
-                    <div><p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p></div>
+                <Link to='' id='empty-7' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-7')} onMouseLeave={() => setIsHovered('')}>
+                    <div>
+                        <img className={`bubbles ${isHovered === 'empty-7' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
+                        <p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p>
+                    </div>
                 </Link>
             </div>
         </div>

@@ -69,8 +69,8 @@ const IdagInatt = () => {
                         <p className=''>
                             The result consisted of a <span className='green'>website</span> with custom graphic elements,
                             containing all information about the event. A
-                            series of <span className='green'>Instagram posts</span> were made to further promote the event, and graphic content used
-                            during the event itself was created.
+                            series of <span className='green'>Instagram posts</span> were made to further promote the event. Graphic content used
+                            during the event itself was also created.
                         </p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const IdagInatt = () => {
                     </div>
                 </div>
                 <div className='pacmantetris'>
-                    <p className='bold'>Graphic elements on the website</p>
+                    <p className='bold'>Some graphic elements on the website</p>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <img src={process.env.PUBLIC_URL + '/images/pacman1.png'} alt='Pacman 1' />
                         <img src={process.env.PUBLIC_URL + '/images/tetris1.png'} alt='Tetris 1' />

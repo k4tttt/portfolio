@@ -81,7 +81,7 @@ const Projects = () => {
                             <li className='smallerText'>Machine learning</li>
                             <li className='smallerText'>Python</li>
                         </ul>
-                        <p className='bold projectTitle'><span className='smallText'>2023</span><br />Handwritten digits</p>
+                        <p className='bold projectTitle'><span className='smallText'>2023</span><br />Handwritten Digits</p>
                         <img src={process.env.PUBLIC_URL + '/images/handwritten_digit.png'} alt='Handwritten digit' />
                     </div>
                 </Link>

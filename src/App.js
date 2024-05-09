@@ -12,6 +12,7 @@ import IdagInatt from './components/IdagInatt';
 import Eli from './components/Eli';
 import Discogs from './components/Discogs';
 import Forgetmenot from './components/Forgetmenot';
+import HandwrittenDigits from './components/HandwrittenDigits';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/eli" element={<Eli />} />
           <Route path="/discogs" element={<Discogs />} />
           <Route path="/forgetmenot" element={<Forgetmenot />} />
+          <Route path="/handwritten_digits" element={<HandwrittenDigits />} />
         </Routes>
         <Footer />
       </Router>

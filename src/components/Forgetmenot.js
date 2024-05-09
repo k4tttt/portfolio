@@ -76,7 +76,7 @@ const Forgetmenot = () => {
                 </div>
                 <div className='' style={{ display: 'flex', marginTop: '18vh' }}>
                     <div>
-                        <img src={process.env.PUBLIC_URL + '/images/forgetmenot_plant.png'} alt='forgetmenot plant' style={{ width: '34vw', marginRight: '20vw' }} />
+                        <img src={process.env.PUBLIC_URL + '/images/forgetmenot_plant.png'} alt='forgetmenot plant' style={{ width: '34vw', marginRight: '8vw' }} />
                         <p className='bold smallText'>forget-me-not plant</p>
                     </div>
                     <div>

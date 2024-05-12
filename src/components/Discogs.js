@@ -11,7 +11,7 @@ const Discogs = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | Redesigning Discogs</title>
@@ -25,7 +25,7 @@ const Discogs = () => {
                     <Link to={{}} className='smallerText'>Discogs</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>redesigning discogs</h2>
                         <p className='smallText'>Discogs is a website where users can buy and sell music. It also serves as a large music database.</p>
                         <table>
@@ -57,7 +57,7 @@ const Discogs = () => {
                         <img src={process.env.PUBLIC_URL + '/images/discogs_artist.png'} alt='Discogs artist page' />
                         <p className='bold smallText'>Redesigned artist page</p>
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             Redesigning elements of the Discogs website was preformed a part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/webbteknik-for-ingenjorer/' target="_blank" rel="noopener noreferrer">Web Technology for Engineers</Link> course. The

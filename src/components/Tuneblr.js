@@ -11,7 +11,7 @@ const Tuneblr = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | tuneblr</title>
@@ -25,7 +25,7 @@ const Tuneblr = () => {
                     <Link to={{}} className='smallerText'>tuneblr</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>tuneblr</h2>
                         <p className='smallText'>A web application where users can create and share their own mixtapes. A database keeps track of the web app's data.</p>
                         <table>
@@ -57,7 +57,7 @@ const Tuneblr = () => {
                         <img src={process.env.PUBLIC_URL + '/images/tuneblr_startpage.png'} alt='tuneblr start page' />
                         <p className='bold smallText'>Start page</p>
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             The tuneblr website was created as part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/databasteknik-och-webbaserade-system/' target="_blank" rel="noopener noreferrer">Databases and Web Based Systems</Link> course. The

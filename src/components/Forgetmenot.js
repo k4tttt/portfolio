@@ -11,7 +11,7 @@ const Forgetmenot = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | forget-me-not</title>
@@ -25,7 +25,7 @@ const Forgetmenot = () => {
                     <Link to={{}} className='smallerText'>forget-me-not</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>forgetmenot</h2>
                         <p className='smallText'>forget-me-not is system that allows you to take care of your plants remotely.</p>
                         <table>
@@ -57,7 +57,7 @@ const Forgetmenot = () => {
                         <img src={process.env.PUBLIC_URL + '/images/forgetmenot_ui.png'} alt='forgetmenot UI' />
                         <p className='bold smallText'>Grapical user interface</p>
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             The forget-me-not project was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/design-och-tjansteutveckling-for-internet-of-things/' target="_blank" rel="noopener noreferrer">Service development and design for the Internet of Things</Link> course.

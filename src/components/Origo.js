@@ -11,7 +11,7 @@ const Origo = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | Marketing at Kårhuset Origo</title>
@@ -25,8 +25,9 @@ const Origo = () => {
                     <Link to={{}} className='smallerText'>Marketing at Kårhuset Origo</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>marketing at karhuset origo</h2>
+                        <p className='smallText'>Kårhuset Origo is the student union house under the Umeå Student Union of Science and Technology.</p>
                         <table>
                             <thead>
                                 <tr className='rowBorder'>
@@ -56,7 +57,7 @@ const Origo = () => {
                         <p className='bold'>Weekly posts</p>
                         <img src={process.env.PUBLIC_URL + '/images/origo_weekly.png'} alt='Origo weekly posts' />
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             I am currently working as a team member in the PR group at Kårhuset Origo.
@@ -75,7 +76,7 @@ const Origo = () => {
                 </div>
                 <div className='posters'>
                     <p className='bold'>DJ posters for the Club X event (spring 2024)</p>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div className='posterContainer'>
                         <img src={process.env.PUBLIC_URL + '/images/dj_fribb.png'} alt='Origo poster - DJ Fribb' />
                         <img src={process.env.PUBLIC_URL + '/images/dj_larsson.png'} alt='Origo poster - DJ Larsson' />
                         <img src={process.env.PUBLIC_URL + '/images/frtetude.png'} alt='Origo poster - Frtetude' />
@@ -85,7 +86,7 @@ const Origo = () => {
                 </div>
                 <div className='posters'>
                     <p className='bold'>Posters for events</p>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div className='posterContainer'>
                         <img src={process.env.PUBLIC_URL + '/images/discOrigo_poster.png'} alt='Origo poster - DiscOrigo 2023' />
                         <img src={process.env.PUBLIC_URL + '/images/clubxvt24_poster.png'} alt='Origo poster - Club X VT24' />
                         <img src={process.env.PUBLIC_URL + '/images/masterimassa_poster.png'} alt='Origo poster - Mästerimässa' />

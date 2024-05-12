@@ -7,7 +7,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
  const Footer = () => {
     return(
         <footer>
-            <div>
+            <div className="logo">
                 <Link className="BLACKOUT" to="/" style={{fontSize: "30px"}}>tyra woden</Link>
             </div>
             <div>

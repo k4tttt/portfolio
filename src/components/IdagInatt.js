@@ -11,7 +11,7 @@ const IdagInatt = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | IDag&Inatt</title>
@@ -25,7 +25,7 @@ const IdagInatt = () => {
                     <Link to={{}} className='smallerText'>IDag&Inatt</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>idag&inatt</h2>
                         <p className='smallText'>IDag&Inatt is a yearly labor market day for students at the M.Sc. program in Interaction Technology and Design.</p>
                         <table>
@@ -57,7 +57,7 @@ const IdagInatt = () => {
                         <p className='bold'>Website landing page</p>
                         <img src={process.env.PUBLIC_URL + '/images/idaginatt_desktop.png'} alt='IDag&Inatt 2023 desktop' />
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             I was part of the PR team for the 2023 edition of IDag&Inatt. The task was to
@@ -76,7 +76,7 @@ const IdagInatt = () => {
                 </div>
                 <div className='instagramPosts'>
                     <p className='bold'>Instagram posts for event sponsors</p>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div className='posterContainer'>
                         <img src={process.env.PUBLIC_URL + '/images/guldsponsor1.png'} alt='Instagram - Guldsponsor 1' />
                         <img src={process.env.PUBLIC_URL + '/images/guldsponsor2.png'} alt='Instagram - Guldsponsor 2' />
                         <img src={process.env.PUBLIC_URL + '/images/guldsponsor3.png'} alt='Instagram - Guldsponsor 3' />
@@ -85,7 +85,7 @@ const IdagInatt = () => {
                 </div>
                 <div className='pacmantetris'>
                     <p className='bold'>Some graphic elements on the website</p>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div className='posterContainer'>
                         <img src={process.env.PUBLIC_URL + '/images/pacman1.png'} alt='Pacman 1' />
                         <img src={process.env.PUBLIC_URL + '/images/tetris1.png'} alt='Tetris 1' />
                         <img src={process.env.PUBLIC_URL + '/images/pacman2.png'} alt='Pacman 2' />

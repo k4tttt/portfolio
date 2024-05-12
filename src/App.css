@@ -224,11 +224,18 @@ h3 { font-size: 34px; }
 #tuneblr {grid-area: area-11;}
 #empty-7 { grid-area: area-12;}
 
-.projectSummary {
-  height: 100vh;
+.projectPage {
   display: flex;
   flex-direction: column;
-  padding-top: 3vh;
+}
+
+.projectSummary {
+  /*height: 100vh;*/
+  /*flex: 0 0 auto;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 0;
 }
 
 .projectSummary img {
@@ -250,9 +257,9 @@ table {
   background-color: var(--gray);
   border-radius: 0.3rem;
 }
-th {text-align: left; padding-top: 24px; padding-bottom: 18px; padding-left: 1.75vw;}
+th {text-align: left; padding-top: 24px; padding-bottom: 18px; padding-left: 20px;}
 th, td {width: 11vw;}
-td {vertical-align: top; padding: 24px 1.75vw;}
+td {vertical-align: top; padding: 24px 20px;}
 
 .rowBorder th {
   /*box-shadow: 0px 17px 0px -16px #565656;*/
@@ -286,6 +293,11 @@ td {vertical-align: top; padding: 24px 1.75vw;}
 .posters img {
   height: auto;
   width: 17vw;
+}
+
+.posterContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .instagramPosts {margin-top: 26vh;}
@@ -376,4 +388,113 @@ svg { margin-right: 8px;}
   z-index: 9999; /* Ensure the cursor stays on top of other elements */
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease;
+}
+
+@media screen and (max-width: 750px) {
+  body, html {
+    font-size: 16px;
+  }
+
+  #projectContainer {
+    grid-gap: 16px;
+    grid-template-areas:
+      "area-1" /*origo*/
+      "area-1" 
+      "area-2" /*idaginatt*/
+      "area-2"
+      "area-3" /*discogs*/
+      /* "area-4" 
+      "area-5"  */
+      "area-6" /*forgetmenot*/
+      "area-7" /*eli*/
+      "area-7"
+      /* "area-8"  */
+      "area-9" /*digits*/
+      /* "area-10" 
+      "area-10" */
+      "area-11" /*tuneblr*/
+      "area-11";
+      /* "area-12"; */
+    grid-template-rows: repeat(11, minmax(30vh, auto));
+    margin: 0 auto;
+    display: grid;
+  }
+
+  .btnCircle {width: 80px;}
+  .emptyProjectItem { display: none; }
+  #projects {margin-bottom: 20vh;}
+  #education {margin-bottom: 20vh;}
+  .overlay::after {background-color: rgba(0, 0, 0, 0.7);}
+  .projectItem p {opacity: 1;}
+  .projectTags {opacity: 1;}
+  .projectItem {border: 1px solid var(--light);}
+
+  .imageDiv { display: none;}
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkList li {
+    padding: 16px 0;
+  }
+
+  footer .logo { margin: 20px 0;}
+
+  .projectSummaryContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16vh;
+    height: fit-content;
+  }
+
+  .projectSummaryContent img {
+    height: auto;
+    width: 70vw;
+    margin: 34px 0;
+  }
+
+  .projectDescription {flex-direction: column-reverse;}
+  .descriptionText {margin-bottom: 34px;}
+  .projectDescription img {
+    height: auto;
+    width: 70vw;
+  }
+
+  .projectContent {margin-bottom: 80px;}
+  .titleTable {display: flex; flex-direction: column;}
+  th {font-size: 14px;}
+  td {font-size: 14px;}
+  .posterContainer {flex-direction: column; align-items: center;}
+  .posters {margin-top: 60px;}
+
+  .posters img {
+    height: auto;
+    width: 70vw;
+    margin-bottom: 40px;
+  }
+
+  .instagramPosts, .pacmantetris {margin-top: 60px;}
+
+  .instagramPosts img {
+    height: auto;
+    width: 70vw;
+    margin-bottom: 40px;
+  }
+
+  .pacmantetris img {
+    height: auto;
+    width: 40vw;
+    margin-bottom: 40px;
+  }
 }

@@ -11,7 +11,7 @@ const Eli = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | ELI</title>
@@ -25,7 +25,7 @@ const Eli = () => {
                     <Link to={{}} className='smallerText'>ELI</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>eli</h2>
                         <p className='smallText'>ELI is a mobile and desktop application that meets the needs of electric vehicle owners.</p>
                         <table>
@@ -57,7 +57,7 @@ const Eli = () => {
                         <img src={process.env.PUBLIC_URL + '/images/eli_ruttplanerare.png'} alt='ELI routeplanner' />
                         <p className='bold smallText'>Plan a route, both on mobile and desktop</p>
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             The ELI project was carried out as part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/design-for-anvandarupplevelse3/' target="_blank" rel="noopener noreferrer">Design for user experience</Link> course. The
@@ -74,7 +74,7 @@ const Eli = () => {
                         </p>
                     </div>
                 </div>
-                <div className='mobilePrototypes' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div className='mobilePrototypes posterContainer'>
                     <div>
                         <img src={process.env.PUBLIC_URL + '/images/eli_mobile_start.png'} alt='ELI mobile - start' />
                         <p className='bold smallText'>Mobile startscreen</p>

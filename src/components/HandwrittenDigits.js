@@ -11,7 +11,7 @@ const HandwrittenDigits = () => {
     }, []);
 
     return (
-        <main>
+        <main className='projectPage'>
             <HelmetProvider>
                 <Helmet>
                     <title>Tyra Wodén | Handwritten Digits</title>
@@ -25,7 +25,7 @@ const HandwrittenDigits = () => {
                     <Link to={{}} className='smallerText'>Handwritten Digits</Link>
                 </div>
                 <div className='projectSummaryContent'>
-                    <div>
+                    <div className='titleTable'>
                         <h2 className='BLACKOUT'>handwritten digits</h2>
                         <p className='smallText'>Classifying handwritten digits by utilizing machine learning.</p>
                         <table>
@@ -57,7 +57,7 @@ const HandwrittenDigits = () => {
                         <img src={process.env.PUBLIC_URL + '/images/handwritten_digits_sample.png'} alt='Handwritten digits sample' />
                         <p className='bold smallText'>Sample of images with handwritten numbers</p>
                     </div>
-                    <div>
+                    <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
                             Classifying handwritten digits was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/artificiell-intelligens---grunderna2/' target="_blank" rel="noopener noreferrer">Fundamentals of Artificial Intelligence</Link> course. The 

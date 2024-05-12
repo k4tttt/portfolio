@@ -76,7 +76,7 @@ const Tuneblr = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='desktops' style={{marginTop: '26vh'}}>
+                    <div className='desktops'>
                         <div>
                             <img src={process.env.PUBLIC_URL + '/images/tuneblr_customize_profile.png'} alt='tuneblr customize profile' />
                             <p className='bold smallText'>Customize your profile</p>

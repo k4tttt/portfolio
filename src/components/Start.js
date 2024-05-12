@@ -19,6 +19,7 @@ const Start = () => {
         }, 1500);
 
         return () => clearInterval(intervalId);
+        // eslint-disable-next-line
     }, []);
 
     const generateNewTextAndColor = () => {
@@ -39,8 +40,8 @@ const Start = () => {
             <div className="content">
                 <p>Hello, I am</p>
                 <h1 className={`BLACKOUT ${hovered ? 'swag active' : ''}`}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}>tyra woden</h1>
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}>tyra woden</h1>
                 <p>I have a passion for creating <span className={color}>{text}</span> digital experiences.</p>
             </div>
             <div className='btnCircle' onClick={handleButtonClick}>

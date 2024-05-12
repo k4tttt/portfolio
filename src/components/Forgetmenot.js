@@ -68,21 +68,23 @@ const Forgetmenot = () => {
                         <h3 className='BLACKOUT'>results</h3>
                         <p className=''>
                             The result of the project consists of a two-part system that solves the problem of taking care of plants
-                            remotely. The first part of the system is the <span className='green'>plant</span> itself, which is equipped with a watering system 
-                            and sensors to detect if the plant is in need of care. The second part is an <span className='green'>alarm</span> system that 
-                            notifies the user when the plant needs care, via music and a flag. The <span className='green'>UI</span> allows the user to see the 
+                            remotely. The first part of the system is the <span className='green'>plant</span> itself, which is equipped with a watering system
+                            and sensors to detect if the plant is in need of care. The second part is an <span className='green'>alarm</span> system that
+                            notifies the user when the plant needs care, via music and a flag. The <span className='green'>UI</span> allows the user to see the
                             conditions of the plant, and provide the plant with water and light.
                         </p>
                     </div>
                 </div>
-                <div className='' style={{ display: 'flex', marginTop: '18vh' }}>
-                    <div>
-                        <img src={process.env.PUBLIC_URL + '/images/forgetmenot_plant.png'} alt='forgetmenot plant' style={{ width: '34vw', marginRight: '8vw' }} />
-                        <p className='bold smallText'>forget-me-not plant</p>
-                    </div>
-                    <div>
-                        <img src={process.env.PUBLIC_URL + '/images/forgetmenot_alarm.png'} alt='forgetmenot alarm' style={{ width: '34vw'}} />
-                        <p className='bold smallText'>forget-me-not alarm</p>
+                <div className='forgetmenotImages'>
+                    <div className='posterContainer'>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/forgetmenot_plant.png'} alt='forgetmenot plant'/>
+                            <p className='bold smallText'>forget-me-not plant</p>
+                        </div>
+                        <div>
+                            <img src={process.env.PUBLIC_URL + '/images/forgetmenot_alarm.png'} alt='forgetmenot alarm' />
+                            <p className='bold smallText'>forget-me-not alarm</p>
+                        </div>
                     </div>
                 </div>
             </div>

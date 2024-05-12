@@ -248,11 +248,9 @@ h3 { font-size: 34px; }
   flex-grow: 1;
   display: flex;
   align-items: center;
-  /*background-color: grey;*/
 }
 
 table {
-  /*width: 46vw;*/
   margin-top: 4vh;
   background-color: var(--gray);
   border-radius: 0.3rem;
@@ -260,11 +258,7 @@ table {
 th {text-align: left; padding-top: 24px; padding-bottom: 18px; padding-left: 20px;}
 th, td {width: 11vw;}
 td {vertical-align: top; padding: 24px 20px;}
-
-.rowBorder th {
-  /*box-shadow: 0px 17px 0px -16px #565656;*/
-  box-shadow: 0px 17px 0px -16px var(--light);
-}
+.rowBorder th {box-shadow: 0px 17px 0px -16px var(--light);}
 
 .projectContent {
   display: flex;
@@ -323,7 +317,7 @@ td {vertical-align: top; padding: 24px 20px;}
 .desktops {
   display: flex;
   justify-content: space-between;
-  margin-top: 10vh;
+  margin-top: 26vh;
 }
 
 .desktops img {
@@ -331,13 +325,19 @@ td {vertical-align: top; padding: 24px 20px;}
   height: auto;
 }
 
+.forgetmenotImages {
+  margin-top: 26vh;
+  padding: 0 4vw;
+}
+
+.forgetmenotImages img {height: auto; width: 36vw;}
+
 #education {margin-bottom: 32vh;}
 
 .educationContent {
   flex-grow: 1;
   display: flex;
   align-items: center;
-  /*background-color: grey;*/
 }
 
 .imageDiv {
@@ -355,8 +355,8 @@ td {vertical-align: top; padding: 24px 20px;}
 }
 .hiddenImage {
   position: absolute;
-  top: calc(5%);;
-  left: calc(10.7%);;
+  top: calc(5%);
+  left: calc(10.7%);
   height: auto;
   width: 15.5vw;
   opacity: 0;
@@ -429,8 +429,6 @@ svg { margin-right: 8px;}
   .projectTags {opacity: 1;}
   .projectItem {border: 1px solid var(--light);}
 
-  .imageDiv { display: none;}
-
   footer {
     display: flex;
     flex-direction: column;
@@ -471,11 +469,11 @@ svg { margin-right: 8px;}
     width: 70vw;
   }
 
-  .projectContent {margin-bottom: 80px;}
+  .projectContent {margin-bottom: 80px; margin-top: 60px;}
   .titleTable {display: flex; flex-direction: column;}
   th {font-size: 14px;}
   td {font-size: 14px;}
-  .posterContainer {flex-direction: column; align-items: center;}
+  .posterContainer, .desktops {flex-direction: column; align-items: center;}
   .posters {margin-top: 60px;}
 
   .posters img {
@@ -492,9 +490,40 @@ svg { margin-right: 8px;}
     margin-bottom: 40px;
   }
 
+  .desktops {margin: 0;}
+  .desktops img {
+    margin-top: 60px;
+    height: auto;
+    width: 80vw;
+  }
+
   .pacmantetris img {
     height: auto;
     width: 40vw;
     margin-bottom: 40px;
+  }
+
+  .mobilePrototypes {margin-top: 60px;}
+  .mobilePrototypes div {width: auto; margin-bottom: 60px;}
+  .mobilePrototypes img {
+    height: auto;
+    width: 56vw;
+  }
+
+  .forgetmenotImages {margin-top: 60px; padding: 0;}
+  .forgetmenotImages div:nth-child(1) {margin-bottom: 60px;}
+  .forgetmenotImages img {height: auto; width: 70vw;}
+
+  .educationContent {flex-direction: column-reverse;}
+  .imageDiv {margin-top: 40px;}
+  .topImage {
+    height: auto;
+    width: 70vw;
+  }
+  .hiddenImage {
+    top: calc(5%);
+    left: calc(12%);
+    height: auto;
+    width: 32vw;
   }
 }

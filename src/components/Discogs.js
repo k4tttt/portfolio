@@ -73,7 +73,7 @@ const Discogs = () => {
                         </p>
                     </div>
                 </div>
-                <div className='desktops' style={{ marginTop: '16vh' }}>
+                <div className='desktops'>
                     <div>
                         <img src={process.env.PUBLIC_URL + '/images/discogs_albums.png'} alt='Discogs albums page' />
                         <p className='bold smallText'>See all albums for the artist</p>

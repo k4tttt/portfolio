@@ -53,7 +53,7 @@ const Origo = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <p className='bold'>Weekly posts</p>
                         <img src={process.env.PUBLIC_URL + '/images/origo_weekly.png'} alt='Origo weekly posts' />
                     </div>

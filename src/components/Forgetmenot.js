@@ -53,7 +53,7 @@ const Forgetmenot = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <img src={process.env.PUBLIC_URL + '/images/forgetmenot_ui.png'} alt='forgetmenot UI' />
                         <p className='bold smallText'>Grapical user interface</p>
                     </div>

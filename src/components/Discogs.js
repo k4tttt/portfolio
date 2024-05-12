@@ -53,7 +53,7 @@ const Discogs = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <img src={process.env.PUBLIC_URL + '/images/discogs_artist.png'} alt='Discogs artist page' />
                         <p className='bold smallText'>Redesigned artist page</p>
                     </div>

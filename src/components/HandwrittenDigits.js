@@ -53,7 +53,7 @@ const HandwrittenDigits = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <img src={process.env.PUBLIC_URL + '/images/handwritten_digits_sample.png'} alt='Handwritten digits sample' />
                         <p className='bold smallText'>Sample of images with handwritten numbers</p>
                     </div>

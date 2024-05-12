@@ -53,7 +53,7 @@ const Tuneblr = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <img src={process.env.PUBLIC_URL + '/images/tuneblr_startpage.png'} alt='tuneblr start page' />
                         <p className='bold smallText'>Start page</p>
                     </div>

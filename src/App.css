@@ -458,7 +458,7 @@ svg { margin-right: 8px;}
 
   .projectSummaryContent img {
     height: auto;
-    width: 70vw;
+    width: 80vw;
     margin: 34px 0;
   }
 
@@ -467,9 +467,11 @@ svg { margin-right: 8px;}
   .projectDescription img {
     height: auto;
     width: 70vw;
+    margin: 0;
   }
 
-  .projectContent {margin-bottom: 80px; margin-top: 60px;}
+  /*.descriptionImage {display: flex; flex-direction: column; align-items: center;}*/
+  .projectContent {margin-bottom: 80px; margin-top: 20px;}
   .titleTable {display: flex; flex-direction: column;}
   th {font-size: 14px;}
   td {font-size: 14px;}

@@ -53,7 +53,7 @@ const Eli = () => {
 
             <div className='projectContent'>
                 <div className='projectDescription'>
-                    <div>
+                    <div className='descriptionImage'>
                         <img src={process.env.PUBLIC_URL + '/images/eli_ruttplanerare.png'} alt='ELI routeplanner' />
                         <p className='bold smallText'>Plan a route, both on mobile and desktop</p>
                     </div>

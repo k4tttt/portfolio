@@ -27,7 +27,7 @@ const Origo = () => {
                 <div className='projectSummaryContent'>
                     <div className='titleTable'>
                         <h2 className='BLACKOUT'>marketing at karhuset origo</h2>
-                        <p className='smallText'>Kårhuset Origo is the student union house under the Umeå Student Union of Science and Technology.</p>
+                        <p className='smallText'>Kårhuset Origo is the student union house for the Umeå Student Union of Science and Technology.</p>
                         <table>
                             <thead>
                                 <tr className='rowBorder'>

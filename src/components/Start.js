@@ -42,7 +42,7 @@ const Start = () => {
                 <h1 className={`BLACKOUT ${hovered ? 'swag active' : ''}`}
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}>tyra woden</h1>
-                <p>I have a passion for creating <span className={color}>{text}</span> digital experiences.</p>
+                <p>I love creating <span className={color}>{text}</span> digital experiences.</p>
             </div>
             <div className='btnCircle' onClick={handleButtonClick}>
                 <FontAwesomeIcon icon={faAngleDown} />

@@ -27,7 +27,7 @@ const Origo = () => {
                 <div className='projectSummaryContent'>
                     <div className='titleTable'>
                         <h2 className='BLACKOUT'>marketing at karhuset origo</h2>
-                        <p className='smallText'>Kårhuset Origo is the student union house for the Umeå Student Union of Science and Technology.</p>
+                        <p className='smallText'>Kårhuset Origo is the student union house for Umeå Student Union of Science and Technology.</p>
                         <table>
                             <thead>
                                 <tr className='rowBorder'>
@@ -60,7 +60,7 @@ const Origo = () => {
                     <div className='descriptionText'>
                         <h3 className='BLACKOUT'>description</h3>
                         <p className=''>
-                            I am currently working as a team member in the PR group at Kårhuset Origo.
+                            I am currently working as a team member in the PR group at <Link className="blue" to="https://www.instagram.com/karhusetorigo/" target="_blank" rel="noopener noreferrer">Kårhuset Origo</Link>.
                             Two peers and I started this group in October 2023, in order to improve
                             Origo's presence on social media. Since then, Origo's socials have gone from inconsistent
                             and lacking of graphic personality, to <span className='green'>regular</span> and with a <span className='green'>uniform graphic appearence</span>.

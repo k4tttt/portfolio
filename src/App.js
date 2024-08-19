@@ -13,6 +13,8 @@ import Eli from './components/Eli';
 import Discogs from './components/Discogs';
 import Forgetmenot from './components/Forgetmenot';
 import HandwrittenDigits from './components/HandwrittenDigits';
+import BrainfuncBeats from './components/BrainfuncBeats';
+import Kanyeornay from './components/Kanyeornay';
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
           <Route path="/discogs" element={<Discogs />} />
           <Route path="/forgetmenot" element={<Forgetmenot />} />
           <Route path="/handwritten_digits" element={<HandwrittenDigits />} />
+          <Route path="/brainfunc_beats" element={<BrainfuncBeats />} />
+          <Route path="/kanyegame" element={<Kanyeornay />} />
         </Routes>
         <Footer />
       </Router>

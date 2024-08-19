@@ -39,7 +39,7 @@ const Eli = () => {
                             <tbody className='smallText'>
                                 <tr>
                                     <td>UX/UI design</td>
-                                    <td>4 weeks</td>
+                                    <td>4 weeks, 100%</td>
                                     <td>Figma, interviews</td>
                                 </tr>
                             </tbody>

@@ -39,7 +39,7 @@ const Tuneblr = () => {
                             <tbody className='smallText'>
                                 <tr>
                                     <td>Web development, databases, UX/UI design</td>
-                                    <td>3 weeks</td>
+                                    <td>3 weeks, 50%</td>
                                     <td>.NET, C#, SQL, Visual Studio, Azure Data Studio, Docker</td>
                                 </tr>
                             </tbody>

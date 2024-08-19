@@ -4,7 +4,7 @@
   --pink: #FF54C0;
   --green: #3EED6F;
   --blue: #54ACFF;
-  --gray: #2a2a2a;
+  --gray: #232323;
 }
 
 body, html {
@@ -58,15 +58,18 @@ h3 { font-size: 34px; }
 
 .btnCircle {
   opacity: 0.5;
+  color: var(--light);
   display: flex;
   width: 8vw;
   height: 40px;
   border-radius: 1em;
+  border: none;
   background-color: #313131;
   align-items: center;
   justify-content: center;
   margin-bottom: 3vh;
   transition: 0.2s;
+  cursor: none;
 }
 
 .btnCircle:hover {opacity: 0.85;}
@@ -193,7 +196,7 @@ h3 { font-size: 34px; }
   top: 0;
   left: 0;
   margin-top: 10px;
-  margin-left: 16px;
+  margin-left: 10px;
   z-index: 2;
   padding: 0;
   transition: opacity 0.3s;
@@ -214,13 +217,13 @@ h3 { font-size: 34px; }
 #origo {grid-area: area-1;}
 #idaginatt {grid-area: area-2;}
 #discogs {grid-area: area-3;}
-#empty-1 { grid-area: area-4;}
+#kanyegame { grid-area: area-4;}
 #empty-2 { grid-area: area-5;}
 #forgetmenot { grid-area: area-6;}
 #eli {grid-area: area-7;}
 #empty-4 { grid-area: area-8;}
 #handwritten_digits { grid-area: area-9;}
-#empty-6 { grid-area: area-10;}
+#brainfunc_beats { grid-area: area-10;}
 #tuneblr {grid-area: area-11;}
 #empty-7 { grid-area: area-12;}
 
@@ -239,8 +242,8 @@ h3 { font-size: 34px; }
 }
 
 .projectSummary img {
-  height: 60vh;
-  width: auto;
+  height: auto;
+  width: 37vw;
   margin-left: 6vw;
 }
 
@@ -266,10 +269,10 @@ td {vertical-align: top; padding: 24px 20px;}
   margin-bottom: 30vh;
 }
 
-.projectSummaryContent img {
+/* .projectSummaryContent img {
   height: auto;
   width: 37vw;
-}
+} */
 
 .projectDescription {
   flex-grow: 1;
@@ -277,10 +280,23 @@ td {vertical-align: top; padding: 24px 20px;}
   align-items: center;
 }
 
-.projectDescription img {
+/* .projectDescription img {
   height: auto;
   width: 34vw;
   margin-right: 6vw;
+} */
+
+.descriptionImage {
+  margin-right: 6vw;
+}
+
+.resultsImage {
+  margin-left: 6vw;
+}
+
+.descriptionImage img, .resultsImage img {
+  height: auto;
+  width: 34vw;
 }
 
 .posters {margin-top: 26vh;}
@@ -317,7 +333,7 @@ td {vertical-align: top; padding: 24px 20px;}
 .desktops {
   display: flex;
   justify-content: space-between;
-  margin-top: 26vh;
+  margin-top: 16vh;
 }
 
 .desktops img {
@@ -364,6 +380,8 @@ td {vertical-align: top; padding: 24px 20px;}
 }
 
 .visible {opacity: 1;}
+#kanyegame p {font-size: 18px;}
+#kanyegame span {font-size: 12px;}
 
 footer {
   border-top: 1px solid var(--light);
@@ -375,20 +393,17 @@ footer {
 
 .linkList { display: flex; }
 .linkList li { margin-left: 2vw;}
-svg { margin-right: 8px;}
+svg { margin-right: 12px;}
 
 .custom-cursor {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #a0a0a0;
-  opacity: 0.3;
   pointer-events: none; /* Ensure the cursor doesn't interfere with mouse events */
   z-index: 9999; /* Ensure the cursor stays on top of other elements */
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease;
 }
+
+.custom-cursor img { height: 26px; width: auto; }
 
 @media screen and (max-width: 750px) {
   body, html {
@@ -403,22 +418,25 @@ svg { margin-right: 8px;}
       "area-2" /*idaginatt*/
       "area-2"
       "area-3" /*discogs*/
-      /* "area-4" 
-      "area-5"  */
+      "area-4" 
+      /* "area-5" */
       "area-6" /*forgetmenot*/
       "area-7" /*eli*/
       "area-7"
       /* "area-8"  */
       "area-9" /*digits*/
-      /* "area-10" 
-      "area-10" */
+      "area-10" 
+      "area-10"
       "area-11" /*tuneblr*/
       "area-11";
       /* "area-12"; */
-    grid-template-rows: repeat(11, minmax(30vh, auto));
+    grid-template-rows: repeat(14, minmax(30vh, auto));
     margin: 0 auto;
     display: grid;
   }
+
+  #kanyegame p {font-size: 24px;}
+  #kanyegame span {font-size: 16px;}
 
   .btnCircle {width: 80px;}
   .emptyProjectItem { display: none; }

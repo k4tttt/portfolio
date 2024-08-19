@@ -39,7 +39,7 @@ const Forgetmenot = () => {
                             <tbody className='smallText'>
                                 <tr>
                                     <td>Internet of Things, UX/UI design</td>
-                                    <td>3 weeks</td>
+                                    <td>3 weeks, 50%</td>
                                     <td>RPi, ESP32, MQTT, Node-RED, Node.js</td>
                                 </tr>
                             </tbody>

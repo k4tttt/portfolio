@@ -39,7 +39,7 @@ const HandwrittenDigits = () => {
                             <tbody className='smallText'>
                                 <tr>
                                     <td>AI, Machine learning, k-NN, ANN</td>
-                                    <td>2 weeks</td>
+                                    <td>2 weeks, 50%</td>
                                     <td>Python, Jupyter Notebook</td>
                                 </tr>
                             </tbody>

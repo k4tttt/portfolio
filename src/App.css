@@ -12,18 +12,19 @@ body, html {
   background-color: var(--dark);
   color: var(--light);
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 20px;
+  font-size: 1.15em;
   cursor: none;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {font-weight: normal; margin: 0;}
+h1, h2, h3 { font-weight: normal; margin: 0; }
 ul { margin: 0; padding: 0; list-style-type: none; }
-a { color: var(--light); text-decoration: none; cursor: none; transition: 0.2s;}
-a:hover { color: var(--pink)}
+a { color: var(--light); text-decoration: none; cursor: none; transition: 0.2s; }
+a:hover { color: var(--pink); }
 
 .BLACKOUT { font-family: 'BLACKOUT', sans-serif; }
-.smallText { font-size: 16px; }
-.smallerText {font-size: 12px;}
+.smallText { font-size: 0.8em; }
+.smallerText { font-size: 0.56em; }
 .green { color: var(--green); }
 .blue { color: var(--blue); }
 .pink { color: var(--pink); }
@@ -35,9 +36,9 @@ a:hover { color: var(--pink)}
 }
 
 main { padding: 0 6vw; }
-h1 { font-size: 120px; }
-h2 { font-size: 60px; }
-h3 { font-size: 34px; }
+h1 { font-size: 6em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
 
 #titleScreen {
   display: flex;
@@ -106,8 +107,8 @@ h3 { font-size: 34px; }
   /*height: 100vh;*/
   grid-gap: 12px;
   grid-template-areas:
-    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-3 area-4" 
-    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-3 area-4" 
+    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4" 
+    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4" 
     "area-1 area-1 area-1 area-2 area-2 area-5 area-6 area-6 area-6"
     "area-7 area-7 area-8 area-2 area-2 area-5 area-6 area-6 area-6"
     "area-7 area-7 area-11 area-11 area-11 area-9 area-9 area-10 area-10"
@@ -183,10 +184,10 @@ h3 { font-size: 34px; }
   transition: opacity 0.3s;
 }
 
-.projectItem:hover p {opacity: 1;}
-.projectTitle {font-size: 24px;}
-.emptyProjectItem {border: none; background-color: var(--gray);}
-.emptyProjectItem:hover {background-color: #1d1d1d;}
+.projectItem:hover p { opacity: 1; }
+.projectTitle { font-size: 1.2em; }
+.emptyProjectItem { border: none; background-color: var(--gray); }
+.emptyProjectItem:hover { background-color: #1d1d1d; }
 
 .projectTags {
   display: flex;
@@ -214,18 +215,18 @@ h3 { font-size: 34px; }
   margin-bottom: 8px;
 }
 
-#origo {grid-area: area-1;}
-#idaginatt {grid-area: area-2;}
-#discogs {grid-area: area-3;}
-#kanyegame { grid-area: area-4;}
-#empty-2 { grid-area: area-5;}
-#forgetmenot { grid-area: area-6;}
-#eli {grid-area: area-7;}
-#empty-4 { grid-area: area-8;}
-#handwritten_digits { grid-area: area-9;}
-#brainfunc_beats { grid-area: area-10;}
-#tuneblr {grid-area: area-11;}
-#empty-7 { grid-area: area-12;}
+#origo { grid-area: area-1; }
+#idaginatt { grid-area: area-2; }
+#discogs { grid-area: area-3; }
+#kanyegame { grid-area: area-4; }
+#empty-2 { grid-area: area-5; }
+#forgetmenot { grid-area: area-6; }
+#eli { grid-area: area-7; }
+#empty-4 { grid-area: area-8; }
+#handwritten_digits { grid-area: area-9; }
+#brainfunc_beats { grid-area: area-10; }
+#tuneblr { grid-area: area-11; }
+#empty-7 { grid-area: area-12; }
 
 .projectPage {
   display: flex;
@@ -252,16 +253,6 @@ h3 { font-size: 34px; }
   display: flex;
   align-items: center;
 }
-
-table {
-  margin-top: 4vh;
-  background-color: var(--gray);
-  border-radius: 0.3rem;
-}
-th {text-align: left; padding-top: 24px; padding-bottom: 18px; padding-left: 20px;}
-th, td {width: 11vw;}
-td {vertical-align: top; padding: 24px 20px;}
-.rowBorder th {box-shadow: 0px 17px 0px -16px var(--light);}
 
 .projectContent {
   display: flex;
@@ -393,7 +384,7 @@ footer {
 
 .linkList { display: flex; }
 .linkList li { margin-left: 2vw;}
-svg { margin-right: 12px;}
+svg { margin-right: 12px; }
 
 .custom-cursor {
   position: fixed;
@@ -490,9 +481,7 @@ svg { margin-right: 12px;}
 
   /*.descriptionImage {display: flex; flex-direction: column; align-items: center;}*/
   .projectContent {margin-bottom: 80px; margin-top: 20px;}
-  .titleTable {display: flex; flex-direction: column;}
-  th {font-size: 14px;}
-  td {font-size: 14px;}
+  
   .posterContainer, .desktops {flex-direction: column; align-items: center;}
   .posters {margin-top: 60px;}
 

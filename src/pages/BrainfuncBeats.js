@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
-import { faClipboard, faClock } from '@fortawesome/free-regular-svg-icons';
+import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 
 const BrainfuncBeats = () => {
   useEffect(() => {
@@ -19,32 +18,16 @@ const BrainfuncBeats = () => {
       </HelmetProvider>
 
       <div className='projectSummary'>
-        <div>
-          <Link to='/' className='smallerText' style={{ marginRight: '8px' }}>Tyra Wodén</Link>
-          <FontAwesomeIcon icon={faAngleRight} className='smallerText'></FontAwesomeIcon>
-          <Link to={{}} className='smallerText'>Brainfunc Beats</Link>
-        </div>
+        <Breadcrumb forPage={'Brainfunc Beats'} />
+
         <div className='projectSummaryContent'>
-          <div className='titleTable'>
-            <h2 className='BLACKOUT'>brainfunc beats</h2>
-            <p className='smallText' style={{ maxWidth: '50vw' }}>Brainfunc Beats: A project aiming to promote fun and easily accessible brain exercise.</p>
-            <table>
-              <thead>
-                <tr className='rowBorder'>
-                  <th><FontAwesomeIcon icon={faClipboard}></FontAwesomeIcon>Tasks</th>
-                  <th><FontAwesomeIcon icon={faClock}></FontAwesomeIcon>Duration</th>
-                  <th><FontAwesomeIcon icon={faScrewdriverWrench}></FontAwesomeIcon>Tools</th>
-                </tr>
-              </thead>
-              <tbody className='smallText'>
-                <tr>
-                  <td>UX/UI design, project managment</td>
-                  <td>5 months, 25%</td>
-                  <td>LoFi- and HiFi-prototyping, end-user testing, Figma, Phaser.js</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <ProjectSummary
+            title={'brainfunc beats'}
+            subtitle={'Brainfunc Beats: A project aiming to promote fun and easily accessible brain exercise.'}
+            tasks={'UX/UI design, project managment'}
+            duration={'5 months, 25%'}
+            tools={'LoFi- and HiFi-prototyping, end-user testing, Figma, Phaser.js'}
+          />
           <div>
             <img style={{ width: '46vh', border: '1px solid var(--light)' }} src={process.env.PUBLIC_URL + '/images/brainfunc_beats_poster.png'} alt='Brainfunc Beats Poster' />
           </div>

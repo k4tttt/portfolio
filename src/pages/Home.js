@@ -1,7 +1,7 @@
 import React from 'react';
-import Start from './Start';
-import Education from './Education';
-import Projects from './Projects';
+import Start from '../components/Start';
+import Education from '../components/Education';
+import Projects from '../components/Projects';
 
 const Home = () => {
     return (

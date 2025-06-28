@@ -3,18 +3,17 @@ import React, {} from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Home from './components/Home';
+import Home from './pages/Home';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
-import Origo from './components/Origo';
-import Tuneblr from './components/Tuneblr';
-import IdagInatt from './components/IdagInatt';
-import Eli from './components/Eli';
-import Discogs from './components/Discogs';
-import Forgetmenot from './components/Forgetmenot';
-import HandwrittenDigits from './components/HandwrittenDigits';
-import BrainfuncBeats from './components/BrainfuncBeats';
-import Kanyeornay from './components/Kanyeornay';
+import Origo from './pages/Origo';
+import Tuneblr from './pages/Tuneblr';
+import IdagInatt from './pages/IdagInatt';
+import Eli from './pages/Eli';
+import Discogs from './pages/Discogs';
+import Forgetmenot from './pages/Forgetmenot';
+import HandwrittenDigits from './pages/HandwrittenDigits';
+import BrainfuncBeats from './pages/BrainfuncBeats';
 
 const App = () => {
   return (
@@ -40,7 +39,6 @@ const App = () => {
           <Route path="/forgetmenot" element={<Forgetmenot />} />
           <Route path="/handwritten_digits" element={<HandwrittenDigits />} />
           <Route path="/brainfunc_beats" element={<BrainfuncBeats />} />
-          <Route path="/kanyegame" element={<Kanyeornay />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import EmptyProjectItem from './EmptyProjectItem/EmptyProjectItem';
 
 const Projects = () => {
-  const [isHovered, setIsHovered] = useState('');
 
   return (
     <div id='projects'>
@@ -20,6 +19,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/origo_preview.png'} alt='Origo' />
           </div>
         </Link>
+
         <Link to='idaginatt' id='idaginatt' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -33,6 +33,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/idaginatt_preview.png'} alt='IDag&Inatt' />
           </div>
         </Link>
+
         <Link to='discogs' id='discogs' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -45,6 +46,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/discogs_preview.png'} alt='Discogs' />
           </div>
         </Link>
+
         <Link to='https://people.cs.umu.se/~id21twn/kanyeornay/' id='kanyegame' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -55,12 +57,9 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/kanyeornay_background.png'} alt='Kanye or nay?' />
           </div>
         </Link>
-        <Link to='' id='empty-2' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-2')} onMouseLeave={() => setIsHovered('')} >
-          <div>
-            <img className={`bubbles ${isHovered === 'empty-2' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
-            <p className='bold projectTitle'><span className='smallerText green'>Stay tuned...</span><br /></p>
-          </div>
-        </Link>
+
+        <EmptyProjectItem id={'empty-2'} />
+
         <Link to='forgetmenot' id='forgetmenot' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -72,6 +71,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/forgetmenot_preview.png'} alt='forget-me-not' />
           </div>
         </Link>
+
         <Link to='eli' id='eli' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -83,12 +83,9 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/eli_preview.png'} alt='ELI' />
           </div>
         </Link>
-        <Link to='' id='empty-4' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-4')} onMouseLeave={() => setIsHovered('')}>
-          <div>
-            <img className={`bubbles ${isHovered === 'empty-4' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
-            <p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p>
-          </div>
-        </Link>
+
+        <EmptyProjectItem id={'empty-4'} />
+
         <Link to='handwritten_digits' id='handwritten_digits' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -100,6 +97,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/handwritten_digit.png'} alt='Handwritten digit' />
           </div>
         </Link>
+
         <Link to='brainfunc_beats' id='brainfunc_beats' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -111,6 +109,7 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/brainfunc_beats_bakgrund.png'} alt='Brainfunc Beats' />
           </div>
         </Link>
+
         <Link to='tuneblr' id='tuneblr' className='projectItem overlay'>
           <div>
             <ul className='projectTags'>
@@ -124,12 +123,8 @@ const Projects = () => {
             <img src={process.env.PUBLIC_URL + '/images/tuneblr_preview.png'} alt='tuneblr' />
           </div>
         </Link>
-        <Link to='' id='empty-7' className='projectItem emptyProjectItem' onMouseEnter={() => setIsHovered('empty-7')} onMouseLeave={() => setIsHovered('')}>
-          <div>
-            <img className={`bubbles ${isHovered === 'empty-7' ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/bubbles.gif'} alt='Bubbles' />
-            <p className='bold projectTitle'><span className='smallerText pink'>Stay tuned...</span><br /></p>
-          </div>
-        </Link>
+
+        <EmptyProjectItem id={'empty-7'} />
       </div>
     </div>
   );

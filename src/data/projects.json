@@ -1,0 +1,83 @@
+[
+  {
+    "id": "origo",
+    "to": "origo",
+    "tags": ["Graphic design", "Marketing", "Figma"],
+    "year": "2023-",
+    "title": "Marketing at Kårhuset Origo",
+    "image": "/images/origo_preview.png",
+    "alt": "Origo"
+  },
+  {
+    "id": "idaginatt",
+    "to": "idaginatt",
+    "tags": ["Graphic design", "Marketing", "HTML", "CSS", "Figma"],
+    "year": "2022-2023",
+    "title": "IDag&Inatt",
+    "image": "/images/idaginatt_preview.png",
+    "alt": "IDag&Inatt"
+  },
+  {
+    "id": "discogs",
+    "to": "discogs",
+    "tags": ["HTML", "CSS", "JavaScript", "React"],
+    "year": "2023",
+    "title": "Redesigning Discogs",
+    "image": "/images/discogs_preview.png",
+    "alt": "Discogs"
+  },
+  {
+    "id": "kanyegame",
+    "to": "https://people.cs.umu.se/~id21twn/kanyeornay/",
+    "tags": ["API:s", "React"],
+    "year": "2024",
+    "title": "Kanye or nay?",
+    "image": "/images/kanyeornay_background.png",
+    "alt": "Kanye or nay?"
+  },
+  {
+    "id": "forgetmenot",
+    "to": "forgetmenot",
+    "tags": ["Internet of Things", "Node.js", "Node-RED"],
+    "year": "2024",
+    "title": "forget-me-not",
+    "image": "/images/forgetmenot_preview.png",
+    "alt": "forget-me-not"
+  },
+  {
+    "id": "eli",
+    "to": "eli",
+    "tags": ["UX/UI design", "Figma", "Interviews"],
+    "year": "2023",
+    "title": "ELI",
+    "image": "/images/eli_preview.png",
+    "alt": "ELI"
+  },
+  {
+    "id": "handwritten_digits",
+    "to": "handwritten_digits",
+    "tags": ["AI", "Machine learning", "Python"],
+    "year": "2023",
+    "title": "Handwritten Digits",
+    "image": "/images/handwritten_digit.png",
+    "alt": "Handwritten digit"
+  },
+  {
+    "id": "brainfunc_beats",
+    "to": "brainfunc_beats",
+    "tags": ["UX/UI design", "Project management", "JavaScript"],
+    "year": "2024",
+    "title": "Brainfunc Beats",
+    "image": "/images/brainfunc_beats_bakgrund.png",
+    "alt": "Brainfunc Beats"
+  },
+  {
+    "id": "tuneblr",
+    "to": "tuneblr",
+    "tags": ["Databases", ".NET", "C#", "SQL", "UX/UI design"],
+    "year": "2023",
+    "title": "tuneblr",
+    "image": "/images/tuneblr_preview.png",
+    "alt": "tuneblr"
+  }
+]

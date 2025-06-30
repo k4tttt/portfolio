@@ -3,7 +3,7 @@ import Start from '../components/Start';
 import Education from '../components/Education';
 import Projects from '../components/Projects';
 import Navigation from '../components/Navigation/Navigation';
-import WorkExperience from '../components/WorkExperience';
+import WorkExperience from '../components/WorkExperience/WorkExperience';
 
 const Home = () => {
 	const [activeSection, setActiveSection] = useState('');

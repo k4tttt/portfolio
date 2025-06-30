@@ -18,7 +18,7 @@
   {
     "id": "yotei",
     "to": "yotei",
-    "tags": ["Software engineering", "Scrum", "React", "Java"],
+    "tags": ["Frontend", "Backend", "Agile/Scrum", "React", "Java"],
     "year": "2025",
     "title": "Yotei",
     "image": "/images/yotei/yotei_preview.png"
@@ -58,7 +58,7 @@
   {
     "id": "brainfunc_beats",
     "to": "brainfunc_beats",
-    "tags": ["UX/UI design", "Project management", "JavaScript"],
+    "tags": ["UX/UI design", "Frontend", "Project management", "JavaScript"],
     "year": "2024",
     "title": "Brainfunc Beats",
     "image": "/images/brainfunc_beats_bakgrund.png"
@@ -66,7 +66,7 @@
   {
     "id": "tuneblr",
     "to": "tuneblr",
-    "tags": ["Databases", ".NET", "C#", "SQL", "UX/UI design"],
+    "tags": ["Databases", "Frontend", ".NET", "C#", "SQL"],
     "year": "2023",
     "title": "tuneblr",
     "image": "/images/tuneblr_preview.png"

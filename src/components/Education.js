@@ -7,7 +7,7 @@ const Education = () => {
 
 	return (
 		<div id='education'>
-			<div className='educationContent'>
+			<div className='section-content'>
 				<div className='imageDiv'>
 					<img className={`hiddenImage ${isHovered ? 'visible' : ''}`} src={process.env.PUBLIC_URL + '/images/id_hemsida.png'} alt='Interaktion och design - UmU' />
 					<img className='topImage' src={process.env.PUBLIC_URL + '/images/computer_and_books.png'} alt='Computer and books' />

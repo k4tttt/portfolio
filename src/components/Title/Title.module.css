@@ -1,0 +1,29 @@
+.title-container {
+  display: flex;
+}
+
+.under {
+  flex-direction: column;
+}
+
+.title {
+  width: fit-content;
+  margin-right: 16px;
+}
+
+.clarification {
+  font-style: italic;
+  font-size: 0.6em;
+  color: var(--green);
+  width: fit-content;
+  margin-top: auto;
+  /* color: rgb(200, 200, 200); */
+}
+
+.h3 .clarification {
+  margin-bottom: 0.4em;
+}
+
+.h2 .clarification {
+  margin-bottom: 0.6em;
+}

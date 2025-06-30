@@ -2,12 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { faClipboard, faClock } from '@fortawesome/free-regular-svg-icons';
 import styles from './ProjectSummary.module.css'
+import Title from '../Title/Title';
 
-const ProjectSummary = ({ title, subtitle, tasks, duration, tools }) => {
+const ProjectSummary = ({ title, displayName, subtitle, tasks, duration, tools }) => {
 
   return (
     <div>
-      <h2 className='BLACKOUT'>{title}</h2>
+      <Title type='h2' title={title} clarification={displayName} under={true} />
+      {/* <h2 className='BLACKOUT'>{title}</h2> */}
       <p className='smallText' style={{ maxWidth: '50vw' }}>{subtitle}</p>
       <table>
         <thead>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const BrainfuncBeats = () => {
   useEffect(() => {
@@ -41,9 +42,9 @@ const BrainfuncBeats = () => {
             {/* <p className='bold smallText'>Sample of images with handwritten numbers</p> */}
           </div>
           <div className='descriptionText'>
-            <h3 className='BLACKOUT'>description</h3>
+            <Title type='h3' title={'description'} />
             <p className=''>
-              The Brainfunc Beats project was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/produktutveckling-i-medieteknik-med-metoden-design-build-test2/' target="_blank" rel="noopener noreferrer">Product Development in Media Technology using the "Design-build-test" method </Link> course.
+              The Brainfunc Beats project was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/produktutveckling-i-medieteknik-med-metoden-design-build-test2/' target="_blank" rel="noopener noreferrer">Product Development in Media Technology using the "Design-build-test" method</Link> course.
               In collaboration with digital agency <Link className='blue' to='https://daresay.co/sv/' target="_blank" rel="noopener noreferrer">Daresay</Link> and
               brain exercise company <Link className='blue' to='https://brainfunc.com/' target="_blank" rel="noopener noreferrer">Brainfunc</Link>,
               the task was to create a concept for a new way to exercise your brain in a fun way.
@@ -58,9 +59,9 @@ const BrainfuncBeats = () => {
         </div>
         <div className='projectDescription' style={{ marginTop: '24vh' }}>
           <div className='descriptionText'>
-            <h3 className='BLACKOUT'>results</h3>
+            <Title type='h3' title={'results'} />
             <p className=''>
-              The result of the project consists of an <span className='green'>interactive web game</span>. The player moves arms and legs according to
+              The result of the project consists of an interactive web game. The player moves arms and legs according to
               arrows that appear on the screen. Arrows can appear in four different fields of the screen, where each field
               corresponds to a body part. The rhythm of the music is visualized on the screen by the arrows
               gradually being filled up with color.

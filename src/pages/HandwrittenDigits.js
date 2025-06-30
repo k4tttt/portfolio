@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const HandwrittenDigits = () => {
 	useEffect(() => {
@@ -41,16 +42,16 @@ const HandwrittenDigits = () => {
 						<p className='bold smallText'>Sample of images with handwritten numbers</p>
 					</div>
 					<div className='descriptionText'>
-						<h3 className='BLACKOUT'>description</h3>
+						<Title type='h3' title={'description'} />
 						<p className=''>
 							Classifying handwritten digits was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/artificiell-intelligens---grunderna2/' target="_blank" rel="noopener noreferrer">Fundamentals of Artificial Intelligence</Link> course. The
 							task was to, in two different ways, determine handwritten numbers on a large dataset of images, with at least 95% accuracy.
-							The first approach consisted of implementing and training a <span className='green'>k-Nearest Neighbor model</span> (k-NN). The second approach was to perform a
-							hyperparameter search to find the optimal number of neurons for a <span className='green'>Neural Network model</span> (ANN), and then training the model according
+							The first approach consisted of implementing and training a k-Nearest Neighbor model (k-NN). The second approach was to perform a
+							hyperparameter search to find the optimal number of neurons for a Neural Network model (ANN), and then training the model according
 							to these values.
 						</p>
 						<br />
-						<h3 className='BLACKOUT'>results</h3>
+						<Title type='h3' title={'results'} />
 						<p className=''>
 							The results showed that the ANN model was better than the k-NN model at classifying the images, after it had been trained
 							with optimal hyperparameters. Reaching the desired result however took a lot more time for the ANN than the k-NN.

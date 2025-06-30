@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const Eli = () => {
 	useEffect(() => {
@@ -41,15 +42,15 @@ const Eli = () => {
 						<p className='bold smallText'>Plan a route, both on mobile and desktop</p>
 					</div>
 					<div className='descriptionText'>
-						<h3 className='BLACKOUT'>description</h3>
+						<Title type='h3' title={'description'} />
 						<p className=''>
 							The ELI project was carried out as part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/design-for-anvandarupplevelse3/' target="_blank" rel="noopener noreferrer">Design for user experience</Link> course. The
-							task was to design a versatile application that meets the needs of electric vehicle owners. To solve the task at hand, <span className='green'>interviews</span> were
-							performed to gather information about the target group. A thorough <span className='green'>use-case scenario</span> was created,
-							and <span className='green'>prototyping</span> on paper and in Figma was performed accordingly.
+							task was to design a versatile application that meets the needs of electric vehicle owners. To solve the task at hand, interviews were
+							performed to gather information about the target group. A thorough use-case scenario was created,
+							and prototyping on paper and in Figma was performed accordingly.
 						</p>
 						<br />
-						<h3 className='BLACKOUT'>results</h3>
+						<Title type='h3' title={'results'} />
 						<p className=''>
 							The result of the ELI project consists of a HiFi Figma prototype that lets the user perform all tasks within the use-case
 							scenario. This includes planning a route, reserving a charging spot, viewing history over charging, as well as

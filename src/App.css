@@ -22,6 +22,15 @@ ul { margin: 0; padding: 0; list-style-type: none; }
 a { color: var(--light); text-decoration: none; cursor: none; transition: 0.2s; }
 a:hover { color: var(--pink); }
 
+button {
+  background-color: var(--dark);
+  color: var(--light);
+  border: none;
+  font-family: inherit;
+  cursor: none;
+  transition: 0.2s;
+}
+
 .BLACKOUT { font-family: 'BLACKOUT', sans-serif; }
 .smallText { font-size: 0.8em; }
 .smallerText { font-size: 0.56em; }
@@ -101,14 +110,14 @@ h3 { font-size: 2em; }
   }
 }
 
-#projects { padding-top: 6vh; margin-bottom: 32vh; }
+#projects { padding-top: 6vh; margin-bottom: 16vh; }
 
 #projectContainer {
   /*height: 100vh;*/
   grid-gap: 12px;
   grid-template-areas:
-    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4" 
-    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4" 
+    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4"
+    "area-1 area-1 area-1 area-2 area-2 area-3 area-3 area-4 area-4"
     "area-1 area-1 area-1 area-2 area-2 area-5 area-6 area-6 area-6"
     "area-7 area-7 area-8 area-2 area-2 area-5 area-6 area-6 area-6"
     "area-7 area-7 area-11 area-11 area-11 area-9 area-9 area-10 area-10"
@@ -121,11 +130,12 @@ h3 { font-size: 2em; }
 
 #origo { grid-area: area-1; }
 #idaginatt { grid-area: area-2; }
-#discogs { grid-area: area-3; }
-#kanyegame { grid-area: area-4; }
+#yotei { grid-area: area-7; }
+/* #discogs { grid-area: area-3; } */
+#key_value_store { grid-area: area-4; }
 #empty-2 { grid-area: area-5; }
 #forgetmenot { grid-area: area-6; }
-#eli { grid-area: area-7; }
+#eli { grid-area: area-3; }
 #empty-4 { grid-area: area-8; }
 #handwritten_digits { grid-area: area-9; }
 #brainfunc_beats { grid-area: area-10; }
@@ -243,7 +253,7 @@ h3 { font-size: 2em; }
 
 .forgetmenotImages img { height: auto; width: 36vw; }
 
-#education { margin-bottom: 32vh; }
+#education { padding-top: 16vh; margin-bottom: 32vh; }
 
 .educationContent {
   flex-grow: 1;
@@ -256,6 +266,7 @@ h3 { font-size: 2em; }
   top: 0;
   left: 0;
 }
+
 .topImage {
   position: relative;
   top: 0;
@@ -264,6 +275,7 @@ h3 { font-size: 2em; }
   width: 34vw;
   margin-right: 6vw;
 }
+
 .hiddenImage {
   position: absolute;
   top: calc(5%);
@@ -275,8 +287,6 @@ h3 { font-size: 2em; }
 }
 
 .visible { opacity: 1; }
-#kanyegame p { font-size: 18px; }
-#kanyegame span { font-size: 12px; }
 
 footer {
   border-top: 1px solid var(--light);
@@ -329,9 +339,6 @@ svg { margin-right: 12px; }
     margin: 0 auto;
     display: grid;
   }
-
-  #kanyegame p {font-size: 24px;}
-  #kanyegame span {font-size: 16px;}
 
   .btnCircle {width: 80px;}
   #projects {margin-bottom: 20vh;}

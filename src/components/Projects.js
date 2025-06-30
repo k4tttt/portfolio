@@ -1,12 +1,14 @@
 import EmptyProjectItem from './EmptyProjectItem/EmptyProjectItem';
 import projects from '../data/projects.json'
 import ProjectItem from "./ProjectItem/ProjectItem";
+import Title from './Title/Title';
 
 const Projects = () => {
 
   return (
     <div id='projects'>
-      <h2 className='BLACKOUT'>projects</h2>
+      <Title title={'projects'} type={'h2'} />
+      {/* <h2 className='BLACKOUT'>projects</h2> */}
       <p className='smallText'>Here are some projects that I have worked on.</p>
       <div id='projectContainer'>
         {projects.map((project, index) => (

@@ -1,0 +1,44 @@
+#navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 4vw;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--dark);
+  box-shadow: 2px 2px 24px var(--dark);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  width: fit-content;
+  border: 1px solid var(--light);
+  border-top: none;
+}
+
+.nav-item {
+  width: fit-content;
+  border-right: 1px solid var(--light);
+}
+
+.nav-item button {
+  padding: 0.6em 0.8em;
+}
+
+.nav-item button:hover {
+  color: var(--pink);
+}
+
+.active {
+  color: var(--pink);
+}
+
+.nav-item:last-child {
+  border: none;
+}
+
+.nav-item svg {
+  margin-right: 8px;
+}

@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Start = () => {
-  const [hovered, setHovered] = useState(false);
   const [text, setText] = useState('awesome');
   const [color, setColor] = useState('blue');
   const adjectives = ["awesome", "user-friendly", "interactive", "fun", "intuitive"];
@@ -39,9 +38,7 @@ const Start = () => {
     <div id='titleScreen'>
       <div className="content">
         <p>Hello, I am</p>
-        <h1 className={`BLACKOUT ${hovered ? 'swag active' : ''}`}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}>tyra woden</h1>
+        <h1 className={`BLACKOUT`}>tyra woden</h1>
         <p>I love creating <span className={color}>{text}</span> digital experiences.</p>
       </div>
       <button className='btnCircle' onClick={handleButtonClick}>

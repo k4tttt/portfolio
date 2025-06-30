@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import Title from './Title/Title';
 
 const Education = () => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -12,7 +13,8 @@ const Education = () => {
 					<img className='topImage' src={process.env.PUBLIC_URL + '/images/computer_and_books.png'} alt='Computer and books' />
 				</div>
 				<div>
-					<h2 className='BLACKOUT'>education</h2>
+					<Title title={'education'} type={'h2'} />
+					{/* <h2 className='BLACKOUT'>education</h2> */}
 					<div>
 						<p>
 							I am currently studying my fourth year at the <Link onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="blue" to="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/" target="_blank" rel="noopener noreferrer">Master of Science Program in Interaction Technology and Design</Link> at Umeå University.

@@ -1,5 +1,4 @@
 import './App.css';
-import React, {} from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -14,6 +13,7 @@ import Discogs from './pages/Discogs';
 import Forgetmenot from './pages/Forgetmenot';
 import HandwrittenDigits from './pages/HandwrittenDigits';
 import BrainfuncBeats from './pages/BrainfuncBeats';
+import KeyValueStore from './pages/KeyValueStore';
 
 const App = () => {
   return (
@@ -39,6 +39,7 @@ const App = () => {
           <Route path="/forgetmenot" element={<Forgetmenot />} />
           <Route path="/handwritten_digits" element={<HandwrittenDigits />} />
           <Route path="/brainfunc_beats" element={<BrainfuncBeats />} />
+          <Route path="/key_value_store" element={<KeyValueStore />} />
         </Routes>
         <Footer />
       </Router>

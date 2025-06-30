@@ -24,6 +24,7 @@
   position: relative;
   overflow: hidden;
   border: 1px solid var(--dark);
+  background-color: var(--gray);
 }
 
 .projectItem div {
@@ -63,6 +64,7 @@
 
 .projectTitle {
   font-size: 1.2em;
+  text-shadow: 1px 1px 4px var(--dark);
 }
 
 .projectTags {
@@ -72,8 +74,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 0.5em;
   z-index: 2;
   padding: 0;
   transition: opacity 0.3s;
@@ -88,9 +89,10 @@
 .projectTags li {
   background-color: var(--gray);
   border-radius: 10px;
-  border: 1px solid #565656;
+  border: 1px solid #626262;
+  box-shadow: 1px 1px 3px var(--gray);
   padding: 4px 8px;
-  margin-right: 0.6vw;
+  margin-right: 0.4em;
   margin-bottom: 8px;
 }
 

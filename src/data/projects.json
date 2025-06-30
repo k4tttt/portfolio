@@ -5,8 +5,7 @@
     "tags": ["Graphic design", "Marketing", "Figma"],
     "year": "2023-",
     "title": "Marketing at Kårhuset Origo",
-    "image": "/images/origo_preview.png",
-    "alt": "Origo"
+    "image": "/images/origo_preview.png"
   },
   {
     "id": "idaginatt",
@@ -14,26 +13,23 @@
     "tags": ["Graphic design", "Marketing", "HTML", "CSS", "Figma"],
     "year": "2022-2023",
     "title": "IDag&Inatt",
-    "image": "/images/idaginatt_preview.png",
-    "alt": "IDag&Inatt"
+    "image": "/images/idaginatt_preview.png"
   },
   {
-    "id": "discogs",
-    "to": "discogs",
-    "tags": ["HTML", "CSS", "JavaScript", "React"],
-    "year": "2023",
-    "title": "Redesigning Discogs",
-    "image": "/images/discogs_preview.png",
-    "alt": "Discogs"
+    "id": "yotei",
+    "to": "yotei",
+    "tags": ["Software engineering", "Scrum", "React", "Java"],
+    "year": "2025",
+    "title": "Yotei",
+    "image": "/images/yotei/yotei_preview.png"
   },
   {
-    "id": "kanyegame",
-    "to": "https://people.cs.umu.se/~id21twn/kanyeornay/",
-    "tags": ["API:s", "React"],
-    "year": "2024",
-    "title": "Kanye or nay?",
-    "image": "/images/kanyeornay_background.png",
-    "alt": "Kanye or nay?"
+    "id": "key_value_store",
+    "to": "key_value_store",
+    "tags": ["Kernel programming", "C", "Python", "Linux"],
+    "year": "2025",
+    "title": "Kernel key-value store",
+    "image": "/images/key_value_store/keys.png"
   },
   {
     "id": "forgetmenot",
@@ -41,8 +37,7 @@
     "tags": ["Internet of Things", "Node.js", "Node-RED"],
     "year": "2024",
     "title": "forget-me-not",
-    "image": "/images/forgetmenot_preview.png",
-    "alt": "forget-me-not"
+    "image": "/images/forgetmenot_preview.png"
   },
   {
     "id": "eli",
@@ -50,8 +45,7 @@
     "tags": ["UX/UI design", "Figma", "Interviews"],
     "year": "2023",
     "title": "ELI",
-    "image": "/images/eli_preview.png",
-    "alt": "ELI"
+    "image": "/images/eli_preview.png"
   },
   {
     "id": "handwritten_digits",
@@ -59,8 +53,7 @@
     "tags": ["AI", "Machine learning", "Python"],
     "year": "2023",
     "title": "Handwritten Digits",
-    "image": "/images/handwritten_digit.png",
-    "alt": "Handwritten digit"
+    "image": "/images/handwritten_digit.png"
   },
   {
     "id": "brainfunc_beats",
@@ -68,8 +61,7 @@
     "tags": ["UX/UI design", "Project management", "JavaScript"],
     "year": "2024",
     "title": "Brainfunc Beats",
-    "image": "/images/brainfunc_beats_bakgrund.png",
-    "alt": "Brainfunc Beats"
+    "image": "/images/brainfunc_beats_bakgrund.png"
   },
   {
     "id": "tuneblr",
@@ -77,7 +69,6 @@
     "tags": ["Databases", ".NET", "C#", "SQL", "UX/UI design"],
     "year": "2023",
     "title": "tuneblr",
-    "image": "/images/tuneblr_preview.png",
-    "alt": "tuneblr"
+    "image": "/images/tuneblr_preview.png"
   }
 ]

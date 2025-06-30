@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const Tuneblr = () => {
 	useEffect(() => {
@@ -41,18 +42,18 @@ const Tuneblr = () => {
 						<p className='bold smallText'>Start page</p>
 					</div>
 					<div className='descriptionText'>
-						<h3 className='BLACKOUT'>description</h3>
+						<Title type='h3' title={'description'} />
 						<p className=''>
 							The tuneblr website was created as part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/databasteknik-och-webbaserade-system/' target="_blank" rel="noopener noreferrer">Databases and Web Based Systems</Link> course. The
 							task was to develop a web application connected to an underlying database, using the ASP.NET
 							Core MVC framework and SQL database.
 						</p>
 						<br />
-						<h3 className='BLACKOUT'>results</h3>
+						<Title type='h3' title={'results'} />
 						<p className=''>
-							The result of the project is in form of a web app where users can <span className='green'>register</span> an account, and
-							then <span className='green'>create</span> mixtapes that can be shared with other users. Mixtapes are shared via email
-							through an SMTP server. Users can also <span className='green'>browse</span> among all mixtapes that exist in the database,
+							The result of the project is in form of a web app where users can register an account, and
+							then create mixtapes that can be shared with other users. Mixtapes are shared via email
+							through an SMTP server. Users can also browse among all mixtapes that exist in the database,
 							and sort them by different tags such as “pop”, “electronic” or “swedish”. Login is handled via
 							cookies, and passwords are encrypted before stored in the database.
 						</p>

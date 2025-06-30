@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const IdagInatt = () => {
 	useEffect(() => {
@@ -40,18 +41,18 @@ const IdagInatt = () => {
 						<img src={process.env.PUBLIC_URL + '/images/idaginatt_desktop.png'} alt='IDag&Inatt 2023 desktop' />
 					</div>
 					<div className='descriptionText'>
-						<h3 className='BLACKOUT'>description</h3>
+						<Title type='h3' title={'description'} />
 						<p className=''>
 							I was part of the PR team for the 2023 edition of IDag&Inatt. The task was to
-							create marketing content and a graphic profile based on the theme <span className='green'>80's arcade</span>, in
+							create marketing content and a graphic profile based on the theme 80's arcade, in
 							order to inform students at the M.Sc. program in Interaction Technology and Design about the event.
 						</p>
 						<br />
-						<h3 className='BLACKOUT'>results</h3>
+						<Title type='h3' title={'results'} />
 						<p className=''>
-							The result consisted of a <span className='green'>website</span> with custom graphic elements,
+							The result consisted of a website with custom graphic elements,
 							containing all information about the event. A
-							series of <span className='green'>Instagram posts</span> were made to further promote the event. Graphic content used
+							series of Instagram posts were made to further promote the event. Graphic content used
 							during the event itself was also created.
 						</p>
 					</div>

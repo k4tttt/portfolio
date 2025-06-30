@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Title from '../components/Title/Title';
 
 const Origo = () => {
 	useEffect(() => {
@@ -23,6 +24,7 @@ const Origo = () => {
 				<div className='projectSummaryContent'>
 					<ProjectSummary
 						title={'marketing at karhuset origo'}
+						displayName={'marketing at kårhuset origo'}
 						subtitle={'Kårhuset Origo is the student union house for Umeå Student Union of Science and Technology.'}
 						tasks={'Graphic design, marketing strategy'}
 						duration={'Ongoing since October 2023'}
@@ -41,19 +43,19 @@ const Origo = () => {
 						<img src={process.env.PUBLIC_URL + '/images/origo_weekly.png'} alt='Origo weekly posts' />
 					</div>
 					<div className='descriptionText'>
-						<h3 className='BLACKOUT'>description</h3>
+						<Title type='h3' title={'description'} />
 						<p className=''>
 							I am currently working as a team member in the PR group at <Link className="blue" to="https://www.instagram.com/karhusetorigo/" target="_blank" rel="noopener noreferrer">Kårhuset Origo</Link>.
 							Two peers and I started the group in October 2023, in order to improve Kårhuset
 							Origo's presence on social media. Since then, Origo's socials have gone from inconsistent
-							and lacking of graphic personality, to <span className='green'>regular</span> and with a <span className='green'>uniform graphic appearence</span>.
+							and lacking of graphic personality, to regular and with a uniform graphic appearence.
 						</p>
 						<br />
-						<h3 className='BLACKOUT'>results</h3>
+						<Title type='h3' title={'results'} />
 						<p className=''>
-							The result of the PR group's work consists of <span className='green'>weekly posts</span> on Instagram and Facebook
+							The result of the PR group's work consists of weekly posts on Instagram and Facebook
 							that inform Umeå's students about what will happen at Kårhuset Origo during the week.
-							<span className='green'> Posters</span> and more elaborate graphic content is created for bigger events.
+							Posters and more elaborate graphic content is created for bigger events.
 						</p>
 					</div>
 				</div>

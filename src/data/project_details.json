@@ -1,0 +1,24 @@
+{
+  "key_value_store": {
+    "id": "key_value_store",
+    "to": "key_value_store",
+    "tags": ["Kernel programming", "C", "Python", "Linux"],
+    "year": "2025",
+    "title": "Kernel key-value store",
+    "image": "/images/key_value_store/kv_store_diagram.png",
+    "alt": "Kernel key-value store",
+    "subtitle": "A Linux kernel module allowing users to store key-value pairs.",
+    "tasks": "Kernel programming, thread synchronization, socket programming",
+    "duration": "1 month, 50%",
+    "tools": "C, Python, Virtual Machine"
+  },
+  "discogs": {
+    "id": "discogs",
+    "to": "discogs",
+    "tags": ["HTML", "CSS", "JavaScript", "React"],
+    "year": "2023",
+    "title": "Redesigning Discogs",
+    "image": "/images/discogs_preview.png",
+    "alt": "Discogs"
+  }
+}

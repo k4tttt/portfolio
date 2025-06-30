@@ -1,2 +1,2 @@
 Portfolio of Tyra Wodén (that's me!).
-This project was developed in React.
+This project is developed in React.

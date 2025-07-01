@@ -31,3 +31,24 @@
 .description {
   margin-bottom: 1.2em;
 }
+
+.image {
+  width: 32vw;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .image {
+    margin-top: 32px;
+    width: 66vw;
+  }
+}

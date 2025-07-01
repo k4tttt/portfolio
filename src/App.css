@@ -429,7 +429,7 @@ svg { margin-right: 12px; }
   .forgetmenotImages div:nth-child(1) {margin-bottom: 60px;}
   .forgetmenotImages img {height: auto; width: 70vw;}
 
-  .educationContent {flex-direction: column-reverse;}
+  .section-content {flex-direction: column-reverse;}
   .imageDiv {margin-top: 40px;}
   .topImage {
     height: auto;

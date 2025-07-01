@@ -52,34 +52,15 @@
 
 .button-text {
   margin-left: 8px;
-  /* display: none; */
-}
-
-/* button:hover .button-text, button.active .button-text {
-  display: block;
-} */
-
-/* .nav-button {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  width: 40px;
-  transition: width 1s;
   white-space: nowrap;
 }
 
-.nav-button:hover,
-.nav-button.active {
-  width: 200px;
+@media (max-width: 750px) {
+  #navigation {
+    left: 50%;
+    right: auto;
+    margin-right: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
 }
-
-.button-text {
-  margin-left: 8px;
-  opacity: 0;
-  transition: opacity 0.3s; 
-}
-
-.nav-button:hover .button-text,
-.nav-button.active .button-text {
-  opacity: 1;
-} */

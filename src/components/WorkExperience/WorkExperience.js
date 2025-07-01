@@ -6,7 +6,7 @@ const WorkExperience = () => {
 
   return (
     <div id='work-experience'>
-      <div className='section-content'>
+      <div className={styles['section-content']}>
         <div style={{ marginRight: '6vw' }}>
           <Title title={'work experience'} type={'h2'} />
 
@@ -19,7 +19,7 @@ const WorkExperience = () => {
 
               <div className={styles['description']}>
                 I am working as a System Developer at <Link className='blue' to='https://www.linkedin.com/company/itsumea/' target='_blank' rel='noopener noreferrer'>ITS at Umeå University</Link>. 
-                As part of a team that works with the student admissions system, I work with both backend and frontend development.
+                As part of a team that works with the student admissions system, I do both backend and frontend development.
               </div>
             </div>
 
@@ -30,16 +30,16 @@ const WorkExperience = () => {
               </div>
 
               <div className={styles['description']}>
-                During the summer I worked as a UX Designer and Software Developer at <Link className='blue' to='https://www.linkedin.com/company/tietoevry/posts/' target='_blank' rel='noopener noreferrer'>Tietoevry</Link>.
-                Together with another summer intern, I developed a web application for visualizing large amounts of log data.
-                The project began with researching and prototyping, after which a React application was developed according to the users' 
-                needs.  
+                During the summer I worked as a UX Designer and Software Developer at <Link className='blue' to='https://www.linkedin.com/company/tietoevry/' target='_blank' rel='noopener noreferrer'>Tietoevry</Link>.
+                Together with another summer intern, I developed a web application for visualizing large amounts of log data. 
+                The project included researching and prototyping, as well as developing a React application solving the problem of 
+                log data visualizing.
               </div>
             </div>
           </div>
         </div>
 
-        <img width={400} src={process.env.PUBLIC_URL + '/images/computer_and_books.png'} alt='Computer and books' />
+        <img className={styles['image']} src={process.env.PUBLIC_URL + '/images/person_working.png'} alt='Person working by laptop' />
       </div>
 
     </div>

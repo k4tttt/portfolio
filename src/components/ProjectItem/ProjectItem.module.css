@@ -112,8 +112,8 @@
 }
 
 @media screen and (max-width: 750px) {
-  .overlay::after {
-    background-color: rgba(0, 0, 0, 0.7);
+  .imageOverlay {
+    opacity: 1;
   }
 
   .projectItem p {

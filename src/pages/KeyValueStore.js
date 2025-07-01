@@ -39,7 +39,7 @@ const KeyValueStore = () => {
         <div className='projectDescription'>
           <div className='descriptionImage'>
             <img src={process.env.PUBLIC_URL + '/images/key_value_store/kv_store_diagram.png'} alt='Kernel key-value store diagram' />
-            <p className='bold smallText'>Diagram blabla</p>
+            <p className='bold smallText'>Diagram representing the system</p>
           </div>
           <div className='descriptionText'>
             <Title type='h3' title={'description'} />

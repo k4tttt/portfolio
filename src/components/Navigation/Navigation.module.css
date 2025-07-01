@@ -3,11 +3,11 @@
   top: 0;
   right: 0;
   margin-right: 4vw;
-  font-size: 0.7em;
   display: flex;
   justify-content: flex-end;
   background-color: var(--dark);
   box-shadow: 2px 2px 24px var(--dark);
+  border-radius: 0 0 0.4rem 0.4rem;
   z-index: 1000;
 }
 
@@ -16,6 +16,8 @@
   width: fit-content;
   border: 1px solid var(--light);
   border-top: none;
+  border-radius: 0 0 0.3rem 0.3rem;
+  overflow: hidden;
 }
 
 .nav-item {
@@ -24,7 +26,10 @@
 }
 
 .nav-item button {
-  padding: 0.6em 0.8em;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 0.666em;
 }
 
 .nav-item button:hover {
@@ -32,7 +37,7 @@
 }
 
 .active {
-  color: var(--pink);
+  color: var(--green);
 }
 
 .nav-item:last-child {
@@ -40,5 +45,41 @@
 }
 
 .nav-item svg {
-  margin-right: 8px;
+  margin: 0;
+  height: 1.2em;
+  width: auto;
 }
+
+.button-text {
+  margin-left: 8px;
+  /* display: none; */
+}
+
+/* button:hover .button-text, button.active .button-text {
+  display: block;
+} */
+
+/* .nav-button {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 40px;
+  transition: width 1s;
+  white-space: nowrap;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  width: 200px;
+}
+
+.button-text {
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+
+.nav-button:hover .button-text,
+.nav-button.active .button-text {
+  opacity: 1;
+} */

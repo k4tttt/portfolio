@@ -37,8 +37,8 @@ const IdagInatt = () => {
 			<div className='projectContent'>
 				<div className='projectDescription'>
 					<div className='descriptionImage'>
-						<p className='bold'>Website landing page</p>
 						<img src={process.env.PUBLIC_URL + '/images/idaginatt_desktop.png'} alt='IDag&Inatt 2023 desktop' />
+						<p className='bold smallText'>Website landing page</p>
 					</div>
 					<div className='descriptionText'>
 						<Title type='h3' title={'description'} />

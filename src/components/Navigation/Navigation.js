@@ -20,22 +20,25 @@ const Navigation = ({ activeSection }) => {
         <li className={styles['nav-item']}>
           <button
             onClick={() => navigateToSection('projects')}
-            className={activeSection === 'projects' ? styles['active'] : ''}>
-            <FontAwesomeIcon icon={faFolderOpen} />Projects
+            className={`${styles['nav-button']} ${activeSection === 'projects' ? styles['active'] : ''}`}>
+            <FontAwesomeIcon icon={faFolderOpen} />
+            <div className={styles['button-text']}>Projects</div>
           </button>
         </li>
         <li className={styles['nav-item']}>
           <button
             onClick={() => navigateToSection('education')}
-            className={activeSection === 'education' ? styles['active'] : ''}>
-            <FontAwesomeIcon icon={faGraduationCap} />Education
+            className={`${styles['nav-button']} ${activeSection === 'education' ? styles['active'] : ''}`}>
+            <FontAwesomeIcon icon={faGraduationCap} />
+            <div className={styles['button-text']}>Education</div>
           </button>
         </li>
         <li className={styles['nav-item']}>
           <button
             onClick={() => navigateToSection('work-experience')}
-            className={activeSection === 'work-experience' ? styles['active'] : ''}>
-            <FontAwesomeIcon icon={faBriefcase} />Work experience
+            className={`${styles['nav-button']} ${activeSection === 'work-experience' ? styles['active'] : ''}`}>
+            <FontAwesomeIcon icon={faBriefcase} />
+            <div className={styles['button-text']}>Work experience</div>
           </button>
         </li>
       </ul>

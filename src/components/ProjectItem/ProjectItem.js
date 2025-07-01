@@ -12,7 +12,11 @@ const ProjectItem = ({ project }) => {
           ))}
         </ul>
         <p className={`bold ${styles.projectTitle}`}><span className='smallText'>{project.year}</span><br />{project.title}</p>
-        <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+        
+        <div className={styles.imageWrapper}>
+          <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+          <div className={styles.imageOverlay}></div>
+        </div>
       </div>
     </Link>
   );

@@ -47,7 +47,7 @@ const HandwrittenDigits = () => {
 							Classifying handwritten digits was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/artificiell-intelligens---grunderna2/' target="_blank" rel="noopener noreferrer">Fundamentals of Artificial Intelligence</Link> course. The
 							task was to, in two different ways, determine handwritten numbers on a large dataset of images, with at least 95% accuracy.
 							The first approach consisted of implementing and training a k-Nearest Neighbor model (k-NN). The second approach was to perform a
-							hyperparameter search to find the optimal number of neurons for a Neural Network model (ANN), and then training the model according
+							hyperparameter search to find the optimal number of neurons for a Neural Network model (ANN), and then train the model according
 							to these values.
 						</p>
 						<br />

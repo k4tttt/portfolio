@@ -14,6 +14,7 @@ import Forgetmenot from './pages/Forgetmenot';
 import HandwrittenDigits from './pages/HandwrittenDigits';
 import BrainfuncBeats from './pages/BrainfuncBeats';
 import KeyValueStore from './pages/KeyValueStore';
+import Yotei from './pages/Yotei';
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/handwritten_digits" element={<HandwrittenDigits />} />
           <Route path="/brainfunc_beats" element={<BrainfuncBeats />} />
           <Route path="/key_value_store" element={<KeyValueStore />} />
+          <Route path="/yotei" element={<Yotei />} />
         </Routes>
         <Footer />
       </Router>

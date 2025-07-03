@@ -63,4 +63,12 @@
     transform: translateX(-50%);
     justify-content: center;
   }
+
+  .active {
+    color: var(--light);
+  }
+
+  .nav-item button {
+    padding: 0.8em 1em;
+  }
 }

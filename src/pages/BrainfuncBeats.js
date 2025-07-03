@@ -57,7 +57,7 @@ const BrainfuncBeats = () => {
             </p>
           </div>
         </div>
-        <div className='projectDescription' style={{ marginTop: '24vh' }}>
+        <div className='projectDescription projectDescriptionReverse' style={{ marginTop: '24vh' }}>
           <div className='descriptionText'>
             <Title type='h3' title={'results'} />
             <p className=''>

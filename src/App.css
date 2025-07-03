@@ -315,6 +315,18 @@ svg { margin-right: 12px; }
     font-size: 16px;
   }
 
+  a, body, html, button {
+    cursor: default;
+  }
+
+  a:hover, button:hover {
+    cursor: pointer;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+
   #projectContainer {
     grid-gap: 16px;
     grid-template-areas:
@@ -385,6 +397,13 @@ svg { margin-right: 12px; }
     margin: 0;
   }
 
+  .projectDescriptionReverse {
+    flex-direction: column;
+  }
+
+  .descriptionImage, .resultsImage {
+    margin: 0;
+  }
   /*.descriptionImage {display: flex; flex-direction: column; align-items: center;}*/
   .projectContent {margin-bottom: 80px; margin-top: 20px;}
   

@@ -31,7 +31,7 @@ const WorkExperience = () => {
 
               <div className={styles['description']}>
                 During the summer I worked as a UX Designer and Software Developer at <Link className='blue' to='https://www.linkedin.com/company/tietoevry/' target='_blank' rel='noopener noreferrer'>Tietoevry</Link>.
-                Together with another summer intern, I developed a web application for visualizing large amounts of log data. 
+                I developed a web application for visualizing large amounts of log data. 
                 The project included researching and prototyping, as well as developing a React application solving the problem of 
                 log data visualizing.
               </div>

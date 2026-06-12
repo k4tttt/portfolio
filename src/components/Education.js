@@ -17,12 +17,17 @@ const Education = () => {
 					{/* <h2 className='BLACKOUT'>education</h2> */}
 					<div>
 						<p>
-							I am currently studying my fifth and final year at the <Link onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="blue" to="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/" target="_blank" rel="noopener noreferrer">Master of Science Program in Interaction Technology and Design</Link> at Umeå University.
+							I have a <Link onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="blue" to="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/" target="_blank" rel="noopener noreferrer">Master of Science in Interaction Technology and Design</Link> degree from Umeå University. 
+							The program formed me into an expert in developing user-friendly, efficient, and durable interfaces and applications. 
+							Many courses center around software engineering, user-centered design, and web development.
 						</p>
 						<p>
-							The program makes me an expert in developing user-friendly, effective, and durable interfaces and applications. A central part
-							is putting focus on the end-user and their needs and desires. The courses I take give me great skills in
-							web and software development, prototyping, and end-user testing.
+							Additionally, I have a Bachelor's degree in Computing Science. During my studies, I focused on CS topics such as  
+							artificial intelligence, databases, and low-level programming, which has elevated my skills as a developer.  
+						</p>
+						<p>
+							My MSc thesis explored an explainable AI approach to energy forecasting, read the full thesis on [link coming soon].
+							{/* <Link className='blue' to='' target='_blank' rel='noopener noreferrer'>DiVA</Link>. */}
 						</p>
 					</div>
 				</div>

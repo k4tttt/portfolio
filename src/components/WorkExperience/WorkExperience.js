@@ -13,13 +13,15 @@ const WorkExperience = () => {
           <div className={styles['work-experience-content']}>
             <div className={styles['work-experience-item']}>
               <div className={styles['timeline']}>
-                <p>2025</p>
+                <p>2025 - 2026</p>
                 <div className={styles['timeline-line']}></div>
               </div>
 
               <div className={styles['description']}>
-                I am working as a System Developer at <Link className='blue' to='https://www.linkedin.com/company/itsumea/' target='_blank' rel='noopener noreferrer'>ITS at Umeå University</Link>. 
-                As part of a team that works with the student admissions system, I do both backend and frontend development.
+                <h3>Software Developer – ITS</h3>
+                At <Link className='blue' to='https://www.linkedin.com/company/itsumea/' target='_blank' rel='noopener noreferrer'>ITS at Umeå University</Link>, 
+                I worked as a Software Developer of a web tool for administrators of the Swedish student admissions system. Tasks included both frontend 
+                development in Angular and backend development in Java.
               </div>
             </div>
 
@@ -30,9 +32,10 @@ const WorkExperience = () => {
               </div>
 
               <div className={styles['description']}>
-                During the summer I worked as a UX Designer and Software Developer at <Link className='blue' to='https://www.linkedin.com/company/tietoevry/' target='_blank' rel='noopener noreferrer'>Tietoevry</Link>.
-                I developed a web application for visualizing large amounts of log data. 
-                The project included researching and prototyping, as well as developing a React application solving the problem of 
+                <h3>UX Designer/Developer – Tieto (Tietoevry)</h3>
+                During the summer I worked as a UX Designer and Frontend Developer at <Link className='blue' to='https://www.linkedin.com/company/tieto/' target='_blank' rel='noopener noreferrer'>Tieto</Link>.
+                I developed a web application for visualizing error log data. 
+                The project included researching and prototyping, followed by development of a React application solving the problem of 
                 log data visualizing.
               </div>
             </div>

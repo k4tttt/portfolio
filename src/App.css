@@ -32,6 +32,7 @@ button {
 }
 
 .BLACKOUT { font-family: 'BLACKOUT', sans-serif; }
+.bigText { font-size: 1.2em;}
 .smallText { font-size: 0.8em; }
 .smallerText { font-size: 0.56em; }
 .green { color: var(--green); }

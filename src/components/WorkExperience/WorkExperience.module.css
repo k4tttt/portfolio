@@ -1,9 +1,12 @@
 .work-experience-content {
   margin-top: 1em;
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
 .work-experience-item {
   display: flex;
+  display: contents;
 }
 
 .work-experience-item p {
@@ -14,11 +17,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 2em;
+  /* margin-right: 2em; */
+  padding-right: 2em;
   color: var(--green);
   font-style: italic;
   font-size: 0.6em;
   padding-top: 0.4em;
+  /* width: fit-content; */
+}
+
+.timeline p {
+  white-space: nowrap;
 }
 
 .timeline-line {
@@ -30,6 +39,12 @@
 
 .description {
   margin-bottom: 1.2em;
+}
+
+.description h3 {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-bottom: 0.4em;
 }
 
 .image {

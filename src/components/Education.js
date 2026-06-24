@@ -26,7 +26,7 @@ const Education = () => {
 							artificial intelligence, databases, and low-level programming, which has elevated my skills as a developer.  
 						</p>
 						<p>
-							My MSc thesis explored an explainable AI approach to energy forecasting, read the full thesis on <Link className='blue' to='http://urn.kb.se/resolve?urn=urn:nbn:se:umu:diva-254616' target='_blank' rel='noopener noreferrer'>DiVA</Link>.
+							My MSc thesis explored an explainable AI approach to energy forecasting. Read the full thesis on <Link className='blue' to='http://urn.kb.se/resolve?urn=urn:nbn:se:umu:diva-254616' target='_blank' rel='noopener noreferrer'>DiVA</Link>.
 						</p>
 					</div>
 				</div>

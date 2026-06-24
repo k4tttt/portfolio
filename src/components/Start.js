@@ -5,7 +5,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 const Start = () => {
   const [text, setText] = useState('awesome');
   const [color, setColor] = useState('blue');
-  const adjectives = ["awesome", "user-friendly", "interactive", "fun", "intuitive"];
+  const adjectives = ["awesome", "user-friendly", "interactive", "fun", "intuitive", "durable"];
   const colors = ["green", "pink", "blue"];
   let i = 0;
   let j = 0;

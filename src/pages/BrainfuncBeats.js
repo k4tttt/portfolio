@@ -45,7 +45,7 @@ const BrainfuncBeats = () => {
             <Title type='h3' title={'description'} />
             <p className=''>
               The Brainfunc Beats project was part of the <Link className='blue' to='https://www.umu.se/utbildning/kurser/produktutveckling-i-medieteknik-med-metoden-design-build-test2/' target="_blank" rel="noopener noreferrer">Product Development in Media Technology using the "Design-build-test" method</Link> course.
-              In collaboration with digital agency <Link className='blue' to='https://daresay.co/sv/' target="_blank" rel="noopener noreferrer">Daresay</Link> and
+              In collaboration with digital agency <Link className='blue' to='https://daresay.co/sv/' target="_blank" rel="noopener noreferrer">Daresay</Link> (now Knightec Group) and
               brain exercise company <Link className='blue' to='https://brainfunc.com/' target="_blank" rel="noopener noreferrer">Brainfunc</Link>,
               the task was to create a concept for a new way to exercise your brain in a fun way.
               {/* To achieve this goal, LoFi- and HiFi-prototyping was highly utilzed.  */}

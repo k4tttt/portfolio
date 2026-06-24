@@ -24,7 +24,7 @@ const HandwrittenDigits = () => {
 				<div className='projectSummaryContent'>
 					<ProjectSummary
 						title={'handwritten digits'}
-						subtitle={'Classifying handwritten digits by utilizing machine learning.'}
+						subtitle={'Classifying handwritten digits through machine learning.'}
 						tasks={'AI, Machine learning, k-NN, ANN'}
 						duration={'2 weeks, 50%'}
 						tools={'Python, Jupyter Notebook'}

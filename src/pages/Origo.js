@@ -27,7 +27,7 @@ const Origo = () => {
 						displayName={'marketing at kårhuset origo'}
 						subtitle={'Kårhuset Origo is the student union house for Umeå Student Union of Science and Technology.'}
 						tasks={'Graphic design, marketing strategy'}
-						duration={'Ongoing since October 2023'}
+						duration={'2 years, 3 months'}
 						tools={'Figma, Canva'}
 					/>
 					<div>
@@ -45,17 +45,22 @@ const Origo = () => {
 					<div className='descriptionText'>
 						<Title type='h3' title={'description'} />
 						<p className=''>
-							I am currently working as a team member in the PR group at <Link className="blue" to="https://www.instagram.com/karhusetorigo/" target="_blank" rel="noopener noreferrer">Kårhuset Origo</Link>.
+							In October 2023, two peers and I started the PR team at student union house <Link className="blue" to="https://www.instagram.com/karhusetorigo/" target="_blank" rel="noopener noreferrer">Kårhuset Origo</Link> in Umeå.
+							We transformed Origo's social media presence from inconsistent
+							and lacking of graphic personality, to regular and with a uniform graphic appearence. For over two years,
+							we managed Origo's socials and developed its branding.
+							{/* I am currently working as a team member in the PR group at <Link className="blue" to="https://www.instagram.com/karhusetorigo/" target="_blank" rel="noopener noreferrer">Kårhuset Origo</Link>.
 							Two peers and I started the group in October 2023, in order to improve Kårhuset
 							Origo's presence on social media. Since then, Origo's socials have gone from inconsistent
-							and lacking of graphic personality, to regular and with a uniform graphic appearence.
+							and lacking of graphic personality, to regular and with a uniform graphic appearence. */}
 						</p>
 						<br />
 						<Title type='h3' title={'results'} />
 						<p className=''>
-							The result of the PR group's work consists of weekly posts on Instagram and Facebook
-							that inform Umeå's students about what will happen at Kårhuset Origo during the week.
-							Posters and more elaborate graphic content is created for bigger events.
+							The result of the PR team's work consisted of weekly posts on Instagram and Facebook,
+							informing Umeå's students about what will happen at Kårhuset Origo during the week.
+							Posters were created for bigger events, and informational content was created for new students 
+							to learn about the student union house.
 						</p>
 					</div>
 				</div>

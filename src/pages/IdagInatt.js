@@ -50,8 +50,8 @@ const IdagInatt = () => {
 						<br />
 						<Title type='h3' title={'results'} />
 						<p className=''>
-							The result consisted of a website with custom graphic elements,
-							containing all information about the event. A
+							The result consisted of a website with custom graphic elements
+							containing information about the event. A
 							series of Instagram posts were made to further promote the event. Graphic content used
 							during the event itself was also created.
 						</p>
